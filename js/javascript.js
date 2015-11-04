@@ -1,7 +1,7 @@
 var obj = $.getJSON( "js/blogEntries.json", function() {
   console.log( "success" );
 })
-  .success(function() {
+  /*.success(function() {
     console.log( "second success" );
   })
   .error(function() {
@@ -9,7 +9,7 @@ var obj = $.getJSON( "js/blogEntries.json", function() {
   })
   .complete(function() {
     console.log( "complete" );
-  });
+  });*/
  
 // Perform other work here ...
  
