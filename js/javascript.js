@@ -3,7 +3,12 @@ $.getJSON( "js/blogEntries.json", function(data) {
   var obj; 
   obj = data;
   //document.getElementById("blogPosts").innerHTML = obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text;
-  $(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
+  
+
+  $.each(obj, function(index, value){
+    $(".blogPosts").text(value);
+    //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
+  })
 })
   /*.success(function() {
     console.log( "second success" );
