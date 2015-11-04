@@ -1,6 +1,7 @@
 var obj = $.getJSON( "js/blogEntries.json", function(data) {
   console.log( data );
 })
+console.log(obj);
   /*.success(function() {
     console.log( "second success" );
   })
