@@ -14,9 +14,9 @@ var obj = $.getJSON( "js/blogEntries.json", function() {
 // Perform other work here ...
  
 // Set another completion function for the request above
-obj.complete(function() {
+/*obj.complete(function() {
   console.log( "second complete" );
-});
+});*/
 
 
 document.getElementById("blogPosts").innerHTML = obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text;
