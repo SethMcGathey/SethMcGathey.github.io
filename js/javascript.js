@@ -1,5 +1,8 @@
-var obj = $.getJSON( "js/blogEntries.json", function(data) {
-  console.log( data );
+
+$.getJSON( "js/blogEntries.json", function(data) {
+  var obj; 
+  obj = data;
+  document.getElementById("blogPosts").innerHTML = obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text;
 })
 console.log(obj);
   /*.success(function() {
@@ -20,4 +23,3 @@ console.log(obj);
 });*/
 
 
-document.getElementById("blogPosts").innerHTML = obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text;
