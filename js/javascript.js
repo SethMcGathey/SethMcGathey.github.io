@@ -1,4 +1,4 @@
-var jqxhr = $.getJSON( "js/blogEntries.json", function() {
+var obj = $.getJSON( "js/blogEntries.json", function() {
   console.log( "success" );
 })
   .success(function() {
@@ -17,5 +17,6 @@ var jqxhr = $.getJSON( "js/blogEntries.json", function() {
 jqxhr.complete(function() {
   console.log( "second complete" );
 });
+
 
 document.getElementByID("blogPosts").innerHTML = obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text;
