@@ -17,3 +17,5 @@ var jqxhr = $.getJSON( "js/blogEntries.json", function() {
 jqxhr.complete(function() {
   console.log( "second complete" );
 });
+
+document.getElementByID("blogPosts").innerHTML = obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text;
