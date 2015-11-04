@@ -1,5 +1,5 @@
-var obj = $.getJSON( "js/blogEntries.json", function() {
-  console.log( "success" );
+var obj = $.getJSON( "js/blogEntries.json", function(data) {
+  console.log( data );
 })
   /*.success(function() {
     console.log( "second success" );
