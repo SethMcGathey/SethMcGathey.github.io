@@ -14,7 +14,7 @@ var obj = $.getJSON( "js/blogEntries.json", function() {
 // Perform other work here ...
  
 // Set another completion function for the request above
-jqxhr.complete(function() {
+obj.complete(function() {
   console.log( "second complete" );
 });
 
