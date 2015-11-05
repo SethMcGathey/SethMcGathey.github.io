@@ -7,7 +7,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
 
   $.each(obj.entries, function(index, value)
   {
-    $(".blogPosts").text(index + " " + value.date + " " + value.title);
+    $(".blogPosts").text("<p>" + value.date + " " + value.title + "</p>");
     //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
   })
 })
