@@ -7,9 +7,9 @@ $.getJSON( "js/blogEntries.json", function(data) {
 
   $.each(obj.entries, function(index, value)
   {
-    $(".blogPosts").append("<h5 class='centerText content'>" + value.date + "</h5>");
-    $(".blogPosts").append("<h5 class='centerText content'>" + value.title + "</h5>");
-    $(".blogPosts").append("<p class='centerText content'>" + value.text + "</p>");
+    $(".blogPosts").append("<h5 class='centerText pagination'>" + value.date + "</h5>").hide();
+    $(".blogPosts").append("<h5 class='centerText pagination'>" + value.title + "</h5>").hide();
+    $(".blogPosts").append("<p class='centerText pagination'>" + value.text + "</p>").hide();
     //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
   })
 })
@@ -30,11 +30,11 @@ $.getJSON( "js/blogEntries.json", function(data) {
   console.log( "second complete" );
 });*/
 
-showPage = function(page) {
-    $(".content").hide();
-    $(".content").each(function(n) {
+/*showPage = function(page) {
+    $(".pagination").hide();
+    $(".pagination").each(function(n) {
         if (n >= pageSize * (page - 1) && n < pageSize * page)
             $(this).show();
     });        
-}
+}*/
 
