@@ -4,12 +4,12 @@ $.getJSON( "js/blogEntries.json", function(data) {
   obj = data;
   //document.getElementById("blogPosts").innerHTML = obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text;
   
-
   $.each(obj.entries, function(index, value)
   {
     $(".blogPosts").append("<h5 class='centerText pagination'>" + value.date + "</h5>").hide();
     $(".blogPosts").append("<h5 class='centerText pagination'>" + value.title + "</h5>").hide();
     $(".blogPosts").append("<p class='centerText pagination'>" + value.text + "</p>").hide();
+    $(".pagination").append("<div class='paginationButtons'><a>" + index+1 + "</a></div>")
     //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
   })
 })
