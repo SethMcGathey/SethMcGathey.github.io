@@ -4,17 +4,17 @@ $.getJSON( "js/blogEntries.json", function(data) {
   obj = data;
   //document.getElementById("blogPosts").innerHTML = obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text;
   
-  $(".pagination").append("<a>Previous</a>");
+  $(".paginationButtons").append("<div><a>Previous</a></div>");
   $.each(obj.entries, function(index, value)
   {
     var num = index + 1;
     $(".blogPosts").append("<h5 class='centerText pagination'>" + value.date + "</h5>").hide();
     $(".blogPosts").append("<h5 class='centerText pagination'>" + value.title + "</h5>").hide();
     $(".blogPosts").append("<p class='centerText pagination'>" + value.text + "</p>").hide();
-    $(".paginationButtons").append("<a>" + num + "</a>");
+    $(".paginationButtons").append("<div><a>" + num + "</a></div>");
     //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
   })
-  $(".pagination").append("<a>Next</a>");
+  $(".paginationButtons").append("<div><a>Next</a></div>");
 })
   /*.success(function() {
     console.log( "second success" );
