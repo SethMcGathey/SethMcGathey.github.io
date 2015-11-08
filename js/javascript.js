@@ -28,6 +28,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
 
 function unhideGroup(number)
 {
+  current = number;
   var numOfEntries = 0;
   $.each(obj.entries, function(index, value)
   {
@@ -41,7 +42,6 @@ function unhideGroup(number)
   for(var i = 1; i <= showThisMany; i++){
     $(".group" + groupNumber).show();
     groupNumber++;
-    current = number;
     console.log(current + "after change");
   }
 }
