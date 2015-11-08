@@ -25,9 +25,10 @@ $.getJSON( "js/blogEntries.json", function(data) {
   function unhideGroup(number)
   {
     for(var i = 1; i <= 3; i++){
-      var groupNumber = number + i;
-      $("group" + groupNumber).show();
+      var groupNumber = number;
+      $(".group" + groupNumber).show();
       console.log("group" + groupNumber);
+      groupNumber + 1;
     }
   }
   /*.success(function() {
