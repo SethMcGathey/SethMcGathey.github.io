@@ -6,7 +6,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
   obj = data;
   //document.getElementById("blogPosts").innerHTML = obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text;
   var numOfEntries = 0;
-  console.log(current);
+  console.log(current + "before previous");
   $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroup(" + (current-1) + ")' href='#''>Previous</a></div>");
   $.each(obj.entries, function(index, value)
   {
@@ -21,7 +21,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
   {
     $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroup(" + i + ")' href='#''>" + i + "</a></div>");
   }
-  console.log(current);
+  console.log(current + "before next");
   $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroup(" + (current+1) + ")' href='#''>Next</a></div>");
 
 })
@@ -42,7 +42,7 @@ function unhideGroup(number)
     $(".group" + groupNumber).show();
     groupNumber++;
     current = number;
-    console.log(current);
+    console.log(current + "after change");
   }
 }
   /*.success(function() {
