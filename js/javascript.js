@@ -35,7 +35,7 @@ function unhideGroup(number)
   })
 
   var showThisMany = 3;
-  var groupNumber = showThisMany * number-1;
+  var groupNumber = showThisMany * number-2;
   for(var i = 1; i <= showThisMany; i++){
     $(".group" + groupNumber).show();
     groupNumber++;
