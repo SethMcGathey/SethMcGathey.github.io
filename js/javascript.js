@@ -8,7 +8,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
   $.each(obj.entries, function(index, value)
   {
     numOfEntries++;
-    $(".blogPosts").append("<h5 class='centerText group" + numOfEntries + "'>" + value.date + "</h5>").hide();
+    $(".blogPosts").append("<h5 class='centerText group" + numOfEntries + "'>" + value.date + "</h5>")//.hide();
     $(".blogPosts").append("<h5 class='centerText group" + numOfEntries + "'>" + value.title + "</h5>").hide();
     $(".blogPosts").append("<p class='centerText group" + numOfEntries + "'>" + value.text + "</p>").hide();
     console.log("group" + numOfEntries);
@@ -27,7 +27,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
     var showThisMany = 3;
     var groupNumber = number;
     for(var i = 1; i <= showThisMany; i++){
-      $(".group" + groupNumber).show();
+      $(".group" + groupNumber).hide();
       console.log(".group" + groupNumber);
       groupNumber++;
     }
