@@ -8,9 +8,9 @@ $.getJSON( "js/blogEntries.json", function(data) {
   $.each(obj.entries, function(index, value)
   {
     var num = index + 1;
-    $(".blogPosts").append("<h5 class='centerText'>" + value.date + "</h5>").hide();
-    $(".blogPosts").append("<h5 class='centerText'>" + value.title + "</h5>").hide();
-    $(".blogPosts").append("<p class='centerText'>" + value.text + "</p>").hide();
+    $(".blogPosts").append("<h5 class='centerText'>" + value.date + "</h5>");//.hide();
+    $(".blogPosts").append("<h5 class='centerText'>" + value.title + "</h5>");//.hide();
+    $(".blogPosts").append("<p class='centerText'>" + value.text + "</p>");//.hide();
     $(".paginationButtons").append("<div class='centerText pagination'><a>" + num + "</a></div>");
     //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
   })
