@@ -50,6 +50,7 @@ function unhideGroupPrev()
 {
   var number = current--;
   console.log(current + "after change");
+  console.log(number + "after change");
   var numOfEntries = 0;
   $.each(obj.entries, function(index, value)
   {
@@ -69,6 +70,7 @@ function unhideGroupNext()
 {
   var number = current++;
   console.log(current + "after change");
+  console.log(number + "after change");
   var numOfEntries = 0;
   $.each(obj.entries, function(index, value)
   {
