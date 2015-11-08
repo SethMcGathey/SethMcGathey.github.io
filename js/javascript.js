@@ -21,6 +21,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
     $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroup(" + i + ")' href='#''>" + i + "</a></div>");
   }
 
+})
   function unhideGroup(number)
   {
     for(var i = 1; i <= 3; i++){
@@ -28,8 +29,6 @@ $.getJSON( "js/blogEntries.json", function(data) {
       document.getElementByClassName("group" + groupNumber).show();
     }
   }
-
-})
   /*.success(function() {
     console.log( "second success" );
   })
