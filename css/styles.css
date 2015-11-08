@@ -3,6 +3,7 @@
 }
 
 .pagination{
+	border:1px;
 	border-style: solid;
 	border-color:#4477BC;
 	padding:4px;
