@@ -11,7 +11,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
     $(".blogPosts").append("<h5 class='centerText group" + numOfEntries + "'>" + value.date + "</h5>");//.hide();
     $(".blogPosts").append("<h5 class='centerText group" + numOfEntries + "'>" + value.title + "</h5>");//.hide();
     $(".blogPosts").append("<p class='centerText group" + numOfEntries + "'>" + value.text + "</p>");//.hide();
-    $(".group" + numOfEntries).hide;
+    $(".group" + numOfEntries).hide();
     //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
   })
   for(var i = 1; i <= numOfEntries/3; i++)
