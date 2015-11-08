@@ -26,7 +26,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
   {
     for(var i = 1; i <= 3; i++){
       var groupNumber = number + i;
-      $document.getElementsByClassName("group" + groupNumber).show();
+      $("group" + groupNumber).show();
     }
   }
   /*.success(function() {
