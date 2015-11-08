@@ -7,7 +7,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
   //document.getElementById("blogPosts").innerHTML = obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text;
   var numOfEntries = 0;
   console.log(current + "before previous");
-  $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroup(" + (current-1) + ")' href='#''>Previous</a></div>");
+  $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroupPrev()' href='#''>Previous</a></div>");
   $.each(obj.entries, function(index, value)
   {
     numOfEntries++;
@@ -22,13 +22,14 @@ $.getJSON( "js/blogEntries.json", function(data) {
     $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroup(" + i + ")' href='#''>" + i + "</a></div>");
   }
   console.log(current + "before next");
-  $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroup(" + (current+1) + ")' href='#''>Next</a></div>");
+  $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroupNext()' href='#''>Next</a></div>");
 
 })
 
 function unhideGroup(number)
 {
   current = number;
+  console.log(current + "after change");
   var numOfEntries = 0;
   $.each(obj.entries, function(index, value)
   {
@@ -42,7 +43,45 @@ function unhideGroup(number)
   for(var i = 1; i <= showThisMany; i++){
     $(".group" + groupNumber).show();
     groupNumber++;
-    console.log(current + "after change");
+  }
+}
+
+function unhideGroupPrev()
+{
+  current--;
+  console.log(current + "after change");
+  var numOfEntries = 0;
+  $.each(obj.entries, function(index, value)
+  {
+    numOfEntries++;
+    $(".group" + numOfEntries).hide();
+    //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
+  })
+
+  var showThisMany = 3;
+  var groupNumber = showThisMany * number-2;
+  for(var i = 1; i <= showThisMany; i++){
+    $(".group" + groupNumber).show();
+    groupNumber++;
+  }
+}
+function unhideGroupNext()
+{
+  current++;
+  console.log(current + "after change");
+  var numOfEntries = 0;
+  $.each(obj.entries, function(index, value)
+  {
+    numOfEntries++;
+    $(".group" + numOfEntries).hide();
+    //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
+  })
+
+  var showThisMany = 3;
+  var groupNumber = showThisMany * number-2;
+  for(var i = 1; i <= showThisMany; i++){
+    $(".group" + groupNumber).show();
+    groupNumber++;
   }
 }
   /*.success(function() {
