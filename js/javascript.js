@@ -14,12 +14,14 @@ $.getJSON( "js/blogEntries.json", function(data) {
     console.log("group" + numOfEntries);
     //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
   })
-  $(".paginationButtons").append("<div class='centerText pagination'><a>Next</a></div>");
-
   for(var i = 1; i <= numOfEntries/3; i++)
   {
     $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroup(" + i + ")' href='#''>" + i + "</a></div>");
   }
+  
+  $(".paginationButtons").append("<div class='centerText pagination'><a>Next</a></div>");
+
+
 
 })
   function unhideGroup(number)
