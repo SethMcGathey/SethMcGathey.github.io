@@ -6,7 +6,6 @@ $.getJSON( "js/blogEntries.json", function(data) {
   obj = data;
   //document.getElementById("blogPosts").innerHTML = obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text;
   var numOfEntries = 0;
-  console.log(current + "before previous");
   $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroupPrev()' href='#''>Previous</a></div>");
   $.each(obj.entries, function(index, value)
   {
@@ -21,15 +20,14 @@ $.getJSON( "js/blogEntries.json", function(data) {
   {
     $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroup(" + i + ")' href='#''>" + i + "</a></div>");
   }
-  console.log(current + "before next");
   $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroupNext()' href='#''>Next</a></div>");
+  unhideGroup(1);
 
 })
 
 function unhideGroup(number)
 {
   current = number;
-  console.log(current + "after change");
   var numOfEntries = 0;
   $.each(obj.entries, function(index, value)
   {
@@ -49,8 +47,6 @@ function unhideGroup(number)
 function unhideGroupPrev()
 {
   var number = current - 1;
-  console.log(current + "after change");
-  console.log(number + "after change");
   var numOfEntries = 0;
   $.each(obj.entries, function(index, value)
   {
@@ -70,8 +66,6 @@ function unhideGroupPrev()
 function unhideGroupNext()
 {
   var number = current + 1;
-  console.log(current + "after change");
-  console.log(number + "after change");
   var numOfEntries = 0;
   $.each(obj.entries, function(index, value)
   {
