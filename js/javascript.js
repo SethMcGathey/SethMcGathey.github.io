@@ -10,7 +10,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
     $(".blogPosts").append("<h5 class='centerText pagination'>" + value.date + "</h5>").hide();
     $(".blogPosts").append("<h5 class='centerText pagination'>" + value.title + "</h5>").hide();
     $(".blogPosts").append("<p class='centerText pagination'>" + value.text + "</p>").hide();
-    $(".pagination").append("<div class='paginationButtons'><a>" + num + "</a></div>");
+    $(".pagination").append("<div class='col-lg-2 paginationButtons'><a>" + num + "</a></div>");
     //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
   })
 })
