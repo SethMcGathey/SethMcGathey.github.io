@@ -4,7 +4,8 @@
 
 .pagination{
 	border-style: solid;
-	padding:5px;
+	border-color:#4477BC;
+	padding:4px;
 	padding-left:8px; 
 	padding-right:8px;
 }
