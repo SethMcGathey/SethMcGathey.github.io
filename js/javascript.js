@@ -9,8 +9,8 @@ $.getJSON( "js/blogEntries.json", function(data) {
   {
     numOfEntries++;
     $(".blogPosts").append("<h5 class='centerText group" + numOfEntries + "'>" + value.date + "</h5>");//.hide();
-    $(".blogPosts").append("<h5 class='centerText group" + numOfEntries + "'>" + value.title + "</h5>").hide();
-    $(".blogPosts").append("<p class='centerText group" + numOfEntries + "'>" + value.text + "</p>").hide();
+    $(".blogPosts").append("<h5 class='centerText group" + numOfEntries + "'>" + value.title + "</h5>");//.hide();
+    $(".blogPosts").append("<p class='centerText group" + numOfEntries + "'>" + value.text + "</p>");//.hide();
     console.log("group" + numOfEntries);
     //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
   })
