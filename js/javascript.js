@@ -26,8 +26,16 @@ $.getJSON( "js/blogEntries.json", function(data) {
 })
   function unhideGroup(number)
   {
+    var numOfEntries = 0;
+    $.each(obj.entries, function(index, value)
+    {
+      numOfEntries++;
+      $(".group" + numOfEntries).hide();
+      //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
+    })
+
     var showThisMany = 3;
-    var groupNumber = number;
+    var groupNumber = showThisMany * number-1;
     for(var i = 1; i <= showThisMany; i++){
       $(".group" + groupNumber).show();
       groupNumber++;
