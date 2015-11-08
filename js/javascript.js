@@ -4,6 +4,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
   obj = data;
   //document.getElementById("blogPosts").innerHTML = obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text;
   
+  $(".pagination").append("<div class='col-lg-2 paginationButtons'><a>Previous</a></div>");
   $.each(obj.entries, function(index, value)
   {
     var num = index + 1;
@@ -13,6 +14,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
     $(".pagination").append("<div class='col-lg-2 paginationButtons'><a>" + num + "</a></div>");
     //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
   })
+  $(".pagination").append("<div class='col-lg-2 paginationButtons'><a>Next</a></div>");
 })
   /*.success(function() {
     console.log( "second success" );
