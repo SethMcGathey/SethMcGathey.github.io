@@ -48,7 +48,7 @@ function unhideGroup(number)
 
 function unhideGroupPrev()
 {
-  var number = current--;
+  var number = current - 1;
   console.log(current + "after change");
   console.log(number + "after change");
   var numOfEntries = 0;
@@ -65,10 +65,11 @@ function unhideGroupPrev()
     $(".group" + groupNumber).show();
     groupNumber++;
   }
+  current = number;
 }
 function unhideGroupNext()
 {
-  var number = current++;
+  var number = current + 1;
   console.log(current + "after change");
   console.log(number + "after change");
   var numOfEntries = 0;
@@ -85,6 +86,7 @@ function unhideGroupNext()
     $(".group" + groupNumber).show();
     groupNumber++;
   }
+  current = number;
 }
   /*.success(function() {
     console.log( "second success" );
