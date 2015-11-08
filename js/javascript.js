@@ -8,7 +8,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
   $.each(obj.entries, function(index, value)
   {
     numOfEntries++;
-    $(".blogPosts").append("<h5 class='centerText group" + numOfEntries + "'>" + value.date + "</h5>")//.hide();
+    $(".blogPosts").append("<h5 class='centerText group" + numOfEntries + "'>" + value.date + "</h5>");//.hide();
     $(".blogPosts").append("<h5 class='centerText group" + numOfEntries + "'>" + value.title + "</h5>").hide();
     $(".blogPosts").append("<p class='centerText group" + numOfEntries + "'>" + value.text + "</p>").hide();
     console.log("group" + numOfEntries);
@@ -18,7 +18,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
   {
     $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroup(" + i + ")' href='#''>" + i + "</a></div>");
   }
-  
+
   $(".paginationButtons").append("<div class='centerText pagination'><a>Next</a></div>");
 
 
