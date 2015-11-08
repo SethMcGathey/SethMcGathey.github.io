@@ -16,7 +16,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
     $(".group" + numOfEntries).hide();
     //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
   })
-  for(var i = 1; i <= numOfEntries/3; i++)
+  for(var i = 1; i <= Math.ceil(numOfEntries/3); i++)
   {
     $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroup(" + i + ")' href='#''>" + i + "</a></div>");
   }
