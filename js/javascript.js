@@ -1,6 +1,7 @@
 
 var obj; 
 var current = 1;
+var showThisMany = 3;
 $.getJSON( "js/blogEntries.json", function(data) {
 
   obj = data;
@@ -16,7 +17,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
     $(".group" + numOfEntries).hide();
     //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
   })
-  for(var i = 1; i <= Math.ceil(numOfEntries/3); i++)
+  for(var i = 1; i <= Math.ceil(numOfEntries/showThisMany); i++)
   {
     $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroup(" + i + ")' href='#''>" + i + "</a></div>");
   }
@@ -36,7 +37,6 @@ function unhideGroup(number)
     //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
   })
 
-  var showThisMany = 3;
   var groupNumber = showThisMany * number-2;
   for(var i = 1; i <= showThisMany; i++){
     $(".group" + groupNumber).show();
