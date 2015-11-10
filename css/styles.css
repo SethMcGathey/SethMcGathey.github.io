@@ -1,3 +1,21 @@
+body{
+	background-image: url("../img/sneaker_mesh_fabric.png");
+}
+
+h1{
+	font-family:'ABeeZee', serif;
+}
+p{
+	font-family:'ABeeZee', serif;
+}
+h3{
+	font-family:'ABeeZee', serif;
+}
+h5{
+	font-family:'ABeeZee', serif;
+}
+
+
 .centerText{
 	text-align:center;
 }
