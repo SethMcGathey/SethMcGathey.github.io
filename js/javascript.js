@@ -84,7 +84,7 @@ function unhideGroupNext()
 }
 
 
-$("#TeamProfile").onClick(function() {
+$("#TeamProfile").click(function() {
   $("#target")
 });
 
