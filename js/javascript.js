@@ -11,10 +11,9 @@ $.getJSON( "js/blogEntries.json", function(data) {
   $.each(obj.entries, function(index, value)
   {
     numOfEntries++;
-    $(".blogPosts").append("<div class='profBoxes postContainer" + numOfEntries + "'></div>").hide();
-    $(".postContainer" + numOfEntries).append("<h5 class='centerText group" + numOfEntries + "'>" + value.date + "</h5>");//.hide();
-    $(".postContainer" + numOfEntries).append("<h5 class='centerText group" + numOfEntries + "'>" + value.title + "</h5>");//.hide();
-    $(".postContainer" + numOfEntries).append("<p class='centerText group" + numOfEntries + "'>" + value.text + "</p>");//.hide();
+    $(".blogPosts").append("<h5 class='centerText group" + numOfEntries + "'>" + value.date + "</h5>");//.hide();
+    $(".blogPosts").append("<h5 class='centerText group" + numOfEntries + "'>" + value.title + "</h5>");//.hide();
+    $(".blogPosts").append("<p class='centerText group" + numOfEntries + "'>" + value.text + "</p>");//.hide();
     $(".group" + numOfEntries).hide();
     //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
   })
@@ -34,14 +33,12 @@ function unhideGroup(number)
   $.each(obj.entries, function(index, value)
   {
     numOfEntries++;
-    $(".postContainer" + numOfEntries).hide();
     $(".group" + numOfEntries).hide();
     //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
   })
 
   var groupNumber = showThisMany * number-2;
   for(var i = 1; i <= showThisMany; i++){
-    $(".postContainer" + numOfEntries).show();
     $(".group" + groupNumber).show();
     groupNumber++;
   }
