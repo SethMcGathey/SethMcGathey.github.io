@@ -7,7 +7,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
   obj = data;
   //document.getElementById("blogPosts").innerHTML = obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text;
   var numOfEntries = 0;
-  $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroupPrev()' href='#''>Previous</a></div>");
+  $(".paginationButtons").append("<div class='centerText pagination whiteBackground'><a onClick='unhideGroupPrev()' href='#''>Previous</a></div>");
   $.each(obj.entries, function(index, value)
   {
     numOfEntries++;
@@ -19,9 +19,9 @@ $.getJSON( "js/blogEntries.json", function(data) {
   })
   for(var i = 1; i <= Math.ceil(numOfEntries/showThisMany); i++)
   {
-    $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroup(" + i + ")' href='#''>" + i + "</a></div>");
+    $(".paginationButtons").append("<div class='centerText pagination whiteBackground'><a onClick='unhideGroup(" + i + ")' href='#''>" + i + "</a></div>");
   }
-  $(".paginationButtons").append("<div class='centerText pagination'><a onClick='unhideGroupNext()' href='#''>Next</a></div>");
+  $(".paginationButtons").append("<div class='centerText pagination whiteBackground'><a onClick='unhideGroupNext()' href='#''>Next</a></div>");
   unhideGroup(1);
 
 })
