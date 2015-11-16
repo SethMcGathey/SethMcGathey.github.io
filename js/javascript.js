@@ -83,7 +83,7 @@ function unhideGroupNext()
   current = number;
 }
 
-function searchFunction(word)
+/*function searchFunction(word)
 {
   $.each(obj.entries, function(index, value)
   {
@@ -99,7 +99,7 @@ function searchFunction(word)
     } 
     numOfEntries++;
   })
-}
+}*/
 
 
 
