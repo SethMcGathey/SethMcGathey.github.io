@@ -2,11 +2,11 @@
 var obj; 
 var current = 1;
 var showThisMany = 3;
+var numOfEntries = 0;
 $.getJSON( "js/blogEntries.json", function(data) {
 
   obj = data;
   //document.getElementById("blogPosts").innerHTML = obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text;
-  var numOfEntries = 0;
   $(".paginationButtons").append("<div class='centerText pagination whiteBackground'><a onClick='unhideGroupPrev()' href='#''>Previous</a></div>");
   $.each(obj.entries, function(index, value)
   {
@@ -57,7 +57,6 @@ function unhideGroupPrev()
       //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
     })
 
-    var showThisMany = 3;
     var groupNumber = showThisMany * number-2;
     for(var i = 1; i <= showThisMany; i++){
       $(".group" + groupNumber).show();
@@ -69,21 +68,23 @@ function unhideGroupPrev()
 function unhideGroupNext()
 {
   var number = current + 1;
-  var numOfEntries = 0;
-  $.each(obj.entries, function(index, value)
+  if(number < showThisMany)
   {
-    numOfEntries++;
-    $(".group" + numOfEntries).hide();
-    //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
-  })
+    var numOfEntries = 0;
+    $.each(obj.entries, function(index, value)
+    {
+      numOfEntries++;
+      $(".group" + numOfEntries).hide();
+      //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
+    })
 
-  var showThisMany = 3;
-  var groupNumber = showThisMany * number-2;
-  for(var i = 1; i <= showThisMany; i++){
-    $(".group" + groupNumber).show();
-    groupNumber++;
+    var groupNumber = showThisMany * number-2;
+    for(var i = 1; i <= showThisMany; i++){
+      $(".group" + groupNumber).show();
+      groupNumber++;
+    }
+    current = number;
   }
-  current = number;
 }
 
 /*function searchFunction(word)
