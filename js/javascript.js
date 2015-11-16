@@ -47,21 +47,24 @@ function unhideGroup(number)
 function unhideGroupPrev()
 {
   var number = current - 1;
-  var numOfEntries = 0;
-  $.each(obj.entries, function(index, value)
+  if(number > 0)
   {
-    numOfEntries++;
-    $(".group" + numOfEntries).hide();
-    //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
-  })
+    var numOfEntries = 0;
+    $.each(obj.entries, function(index, value)
+    {
+      numOfEntries++;
+      $(".group" + numOfEntries).hide();
+      //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
+    })
 
-  var showThisMany = 3;
-  var groupNumber = showThisMany * number-2;
-  for(var i = 1; i <= showThisMany; i++){
-    $(".group" + groupNumber).show();
-    groupNumber++;
-  }
-  current = number;
+    var showThisMany = 3;
+    var groupNumber = showThisMany * number-2;
+    for(var i = 1; i <= showThisMany; i++){
+      $(".group" + groupNumber).show();
+      groupNumber++;
+    }
+    current = number;
+
 }
 function unhideGroupNext()
 {
