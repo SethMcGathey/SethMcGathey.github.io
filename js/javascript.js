@@ -2,11 +2,11 @@
 var obj; 
 var current = 1;
 var showThisMany = 3;
-var numOfEntries = 0;
 $.getJSON( "js/blogEntries.json", function(data) {
 
   obj = data;
   //document.getElementById("blogPosts").innerHTML = obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text;
+  var numOfEntries = 0;
   $(".paginationButtons").append("<div class='centerText pagination whiteBackground'><a onClick='unhideGroupPrev()' href='#''>Previous</a></div>");
   $.each(obj.entries, function(index, value)
   {
@@ -68,7 +68,7 @@ function unhideGroupPrev()
 function unhideGroupNext()
 {
   var number = current + 1;
-  if(number < showThisMany)
+  if(number <= showThisMany)
   {
     var numOfEntries = 0;
     $.each(obj.entries, function(index, value)
