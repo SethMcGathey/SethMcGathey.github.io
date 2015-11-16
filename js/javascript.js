@@ -83,6 +83,25 @@ function unhideGroupNext()
   current = number;
 }
 
+function searchFunction(word)
+{
+  $.each(obj.entries, function(index, value)
+  {
+    numOfEntries++;
+    $(".group" + numOfEntries).hide();
+  })
+
+  $.each(obj.entries, function(index, value)
+  {
+    if (jQuery("div.group" + numOfEntries ":contains('" + word + "')").length) 
+    {
+      jQuery("div.group" + numOfEntries).show();
+    } 
+    numOfEntries++;
+  })
+}
+
+
 
 $("#TeamProfile").click(function() {
   $("#target")
