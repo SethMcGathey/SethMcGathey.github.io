@@ -64,7 +64,7 @@ function unhideGroupPrev()
       groupNumber++;
     }
     current = number;
-
+  }
 }
 function unhideGroupNext()
 {
