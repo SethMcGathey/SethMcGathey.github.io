@@ -45,9 +45,9 @@ function showNextButton()
   $(".next").show();
 }
 
-function checkHideShowPrevNext()
+function checkHideShowPrevNext(currentNumber)
 {
-    if(number <= 1)
+    if(currentNumber <= 1)
     {
       hidePrevButton();
     }else
@@ -55,7 +55,7 @@ function checkHideShowPrevNext()
       showPrevButton();
     }
 
-    if(number >= numOfPages)
+    if(currentNumber >= numOfPages)
     {
       hideNextButton();
     }else
@@ -80,7 +80,7 @@ function unhideGroup(number)
     $(".group" + groupNumber).show();
     groupNumber++;
   }
-  checkHideShowPrevNext();
+  checkHideShowPrevNext(current);
 }
 
 function unhideGroupPrev()
@@ -103,7 +103,7 @@ function unhideGroupPrev()
     }
     current = number;
   }
-  checkHideShowPrevNext();
+  checkHideShowPrevNext(current);
 }
 function unhideGroupNext()
 {
@@ -125,7 +125,7 @@ function unhideGroupNext()
     }
     current = number;
   }
-  checkHideShowPrevNext();
+  checkHideShowPrevNext(current);
 }
 
 /*function searchFunction(word)
