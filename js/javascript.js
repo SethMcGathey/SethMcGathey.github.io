@@ -2,12 +2,13 @@
 var obj; 
 var current = 1;
 var showThisMany = 3;
+var numOfPages = 0;
 $.getJSON( "js/blogEntries.json", function(data) {
 
   obj = data;
   //document.getElementById("blogPosts").innerHTML = obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text;
   var numOfEntries = 0;
-  $(".paginationButtons").append("<div class='centerText pagination whiteBackground'><a onClick='unhideGroupPrev()' href='#''>Previous</a></div>");
+  $(".paginationButtons").append("<div class='centerText pagination whiteBackground' id='prev'><a onClick='unhideGroupPrev()' href='#''>Previous</a></div>");
   $.each(obj.entries, function(index, value)
   {
     numOfEntries++;
@@ -17,14 +18,51 @@ $.getJSON( "js/blogEntries.json", function(data) {
     $(".group" + numOfEntries).hide();
     //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
   })
-  for(var i = 1; i <= Math.ceil(numOfEntries/showThisMany); i++)
+  numOfPages = Math.ceil(numOfEntries/showThisMany);
+  for(var i = 1; i <= numOfPages; i++)
   {
     $(".paginationButtons").append("<div class='centerText pagination whiteBackground'><a onClick='unhideGroup(" + i + ")' href='#''>" + i + "</a></div>");
   }
-  $(".paginationButtons").append("<div class='centerText pagination whiteBackground'><a onClick='unhideGroupNext()' href='#''>Next</a></div>");
+  $(".paginationButtons").append("<div class='centerText pagination whiteBackground' id='next'><a onClick='unhideGroupNext()' href='#''>Next</a></div>");
   unhideGroup(1);
 
 })
+
+function hidePrevButton()
+{
+  $(".prev").hide();
+}
+function hideNextButton()
+{
+  $(".next").hide();
+}
+function showPrevButton()
+{
+  $(".prev").show();
+}
+function showNextButton()
+{
+  $(".next").show();
+}
+
+function checkHideShowPrevNext()
+{
+    if(number <= 1)
+    {
+      hidePrevButton();
+    }else
+    {
+      showPrevButton();
+    }
+
+    if(number >= numOfPages)
+    {
+      hideNextButton();
+    }else
+    {
+      showNextButton();
+    }
+}
 
 function unhideGroup(number)
 {
@@ -68,7 +106,7 @@ function unhideGroupPrev()
 function unhideGroupNext()
 {
   var number = current + 1;
-  if(number <= showThisMany)
+  if(number <= numOfPages)
   {
     var numOfEntries = 0;
     $.each(obj.entries, function(index, value)
@@ -145,7 +183,7 @@ function findString (str) {
   alert ("Opera browsers not supported, sorry...")
   return;
  }
- if (!strFound) alert ("String '"+str+"' not found!")
+ if (!strFound) alert ("String '"+ str +"' not found!")
  return;
 }
   /*.success(function() {
