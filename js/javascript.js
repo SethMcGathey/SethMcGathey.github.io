@@ -80,6 +80,7 @@ function unhideGroup(number)
     $(".group" + groupNumber).show();
     groupNumber++;
   }
+  checkHideShowPrevNext();
 }
 
 function unhideGroupPrev()
@@ -102,6 +103,7 @@ function unhideGroupPrev()
     }
     current = number;
   }
+  checkHideShowPrevNext();
 }
 function unhideGroupNext()
 {
@@ -123,6 +125,7 @@ function unhideGroupNext()
     }
     current = number;
   }
+  checkHideShowPrevNext();
 }
 
 /*function searchFunction(word)
