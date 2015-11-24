@@ -30,19 +30,19 @@ $.getJSON( "js/blogEntries.json", function(data) {
 
 function hidePrevButton()
 {
-  $(".prev").hide();
+  $("#prev").hide();
 }
 function hideNextButton()
 {
-  $(".next").hide();
+  $("#next").hide();
 }
 function showPrevButton()
 {
-  $(".prev").show();
+  $("#prev").show();
 }
 function showNextButton()
 {
-  $(".next").show();
+  $("#next").show();
 }
 
 function checkHideShowPrevNext(currentNumber)
