@@ -131,6 +131,10 @@ function unhideGroupNext()
 function searchFunction(word)
 {
   replace(word, "<mark>" + word + "</mark>")
+
+  var str = document.getElementById("blogPosts").innerHTML; 
+  var res = str.replace(word, "<mark>" + word + "</mark>");
+  document.getElementById("blogPosts").innerHTML = res;
 }
 
 
