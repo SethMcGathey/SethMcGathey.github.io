@@ -133,7 +133,7 @@ function searchFunction()
   var word = document.getElementById('t1').value
 
   var str = document.getElementsByClassName("blogPosts").innerHTML; 
-  var res = str.replace('/' + word + '/gi', "<mark>" + word + "</mark>");
+  var res = str.replace(/week/gi, "<mark>" + word + "</mark>");
   document.getElementsByClassName("blogPosts").innerHTML = res;
 }
 
