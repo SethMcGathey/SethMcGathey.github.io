@@ -128,23 +128,10 @@ function unhideGroupNext()
   checkHideShowPrevNext(current);
 }
 
-/*function searchFunction(word)
+function searchFunction(word)
 {
-  $.each(obj.entries, function(index, value)
-  {
-    numOfEntries++;
-    $(".group" + numOfEntries).hide();
-  })
-
-  $.each(obj.entries, function(index, value)
-  {
-    if (jQuery("div.group" + numOfEntries ":contains('" + word + "')").length) 
-    {
-      jQuery("div.group" + numOfEntries).show();
-    } 
-    numOfEntries++;
-  })
-}*/
+  replace(word, "<mark>" + word + "</mark>")
+}
 
 
 
