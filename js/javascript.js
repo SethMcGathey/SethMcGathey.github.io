@@ -132,7 +132,7 @@ function searchFunction()
 {
   var word = document.getElementById('t1').value
 
-  var str = document.getElementById("blogPosts").innerHTML; 
+  var str = document.getElementsByClassName("blogPosts").innerHTML; 
   var res = str.replace(word, "<mark>" + word + "</mark>");
   document.getElementById("blogPosts").innerHTML = res;
 }
