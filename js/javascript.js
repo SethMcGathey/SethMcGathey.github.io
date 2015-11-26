@@ -128,8 +128,9 @@ function unhideGroupNext()
   checkHideShowPrevNext(current);
 }
 
-function searchFunction(word)
+function searchFunction()
 {
+  var word = document.getElementById('t1').value
   replace(word, "<mark>" + word + "</mark>")
 
   var str = document.getElementById("blogPosts").innerHTML; 
