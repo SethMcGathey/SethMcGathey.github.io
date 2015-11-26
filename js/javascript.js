@@ -133,7 +133,7 @@ function searchFunction()
   var word = document.getElementById('t1').value
   //var str = "Mr Blue has a blue house and a blue car";
   var str = document.getElementById("testing").innerHTML; 
-  var res = str.replace(/blue/gi, "<mark>" + word + "</mark>");
+  var res = str.replace(/blue/gi, "<mark>blue</mark>");
   document.getElementById("testing").innerHTML = res;
 }
 
