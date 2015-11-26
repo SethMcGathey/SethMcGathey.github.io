@@ -131,10 +131,10 @@ function unhideGroupNext()
 function searchFunction()
 {
   var word = document.getElementById('t1').value
-  var str = "Mr Blue has a blue house and a blue car";
-  //var str = document.getElementsByClassName("blogPosts").innerHTML; 
-  var res = str.replace(/week/gi, "<mark>" + word + "</mark>");
-  document.getElementsByClassName("blogPosts").innerHTML = res;
+  //var str = "Mr Blue has a blue house and a blue car";
+  var str = document.getElementById("testing").innerHTML; 
+  var res = str.replace(/blue/gi, "<mark>" + word + "</mark>");
+  document.getElementById("testing").innerHTML = res;
 }
 
 
