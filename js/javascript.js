@@ -149,7 +149,7 @@ function showPostsWhenWordFound(word)
     num++;
     $(".group" + num).hide();
   })
-
+  var num = 0;
   $.each(obj.entries, function(index, value)
   {
     var str = document.getElementById("group" + num).innerHTML; 
