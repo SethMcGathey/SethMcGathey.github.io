@@ -155,6 +155,7 @@ function showPostsWhenWordFound(word)
     var str = document.getElementById("group" + num).innerHTML; 
     if(str.indexOf(word) > -1)
     {
+      console.log("made it");
       $(".group" + num).show();
     }
   })
