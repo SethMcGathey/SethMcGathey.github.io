@@ -151,28 +151,19 @@ function showPostsWhenWordFound(word)
   })
   console.log("made it");
   var num = 0;
+  var totalCount = 0;
   $.each(obj.entries, function(index, value)
   {
-
-    console.log("made it 4");
-    console.log(value.date);
-    console.log(value.title);
-    console.log(value.text);
     var str = value.date; 
     var str1 = value.title;
     var str2 = value.text;
-    console.log(word);
-    console.log(str);
-    console.log("made it 2");
-    console.log(str.indexOf(word));
     
     console.log(str.indexOf("cat"));
     num++;
-    if(str.indexOf(word) != -1 || str1.indexOf(word) != -1 || str2.indexOf(word) != -1)
+    if(str.indexOf(word) != -1 || str1.indexOf(word) != -1 || str2.indexOf(word) != -1 || totalCount >= showThisMany)
     {
-      console.log("made it 3");
       $(".group" + num).show();
-
+      totalCount++;
     }
   })
 }
