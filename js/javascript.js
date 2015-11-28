@@ -155,7 +155,7 @@ function showPostsWhenWordFound(word)
   {
 
     console.log("made it 4");
-    var str = document.getElementById("group" + num).innerHTML; 
+    var str = document.getElementsByClassName("group" + num).innerHTML; 
     console.log(word);
     console.log(str);
     console.log("made it 2");
