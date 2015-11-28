@@ -157,6 +157,7 @@ function showPostsWhenWordFound(word)
     console.log(str.indexOf(word));
     console.log(word);
     console.log(str.indexOf("cat"));
+    console.log("cat");
     var str = document.getElementById("group" + num).innerHTML; 
 
     if(str.indexOf(word) != -1)
