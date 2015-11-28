@@ -12,7 +12,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
   $.each(obj.entries, function(index, value)
   {
     numOfEntries++;
-    $(".blogPosts").append("<div class='centerText' id='content" + numOfEntries + "'>" + value.date + "</div>");
+    $(".blogPosts").append("<div class='centerText' id='content" + numOfEntries + "'></div>");
     $("#content" + numOfEntries).append("<h5 class='centerText group" + numOfEntries + "'>" + value.date + "</h5>");//.hide();
     $("#content" + numOfEntries).append("<h5 class='centerText group" + numOfEntries + "'>" + value.title + "</h5>");//.hide();
     $("#content" + numOfEntries).append("<p class='centerText group" + numOfEntries + "'>" + value.text + "</p>");//.hide();
