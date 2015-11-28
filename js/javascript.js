@@ -128,16 +128,21 @@ function unhideGroupNext()
   checkHideShowPrevNext(current);
 }
 
+//search for words in blog page
 function searchFunction()
 {
   var word = document.getElementById('t1').value
   //RegExp(oldWord, "g")
   //var str = "Mr Blue has a blue house and a blue car";
   var str = document.getElementById("everything").innerHTML; 
-  var res = str.replace(RegExp(word, "g"), "<mark>" + word + "</mark>");
+  var res = str.replace(RegExp(word, "gi"), "<mark>" + word + "</mark>");
   document.getElementById("everything").innerHTML = res;
 }
 
+function showPostsWhenWordFound()
+{
+
+}
 
 
 $("#TeamProfile").click(function() {
@@ -146,7 +151,7 @@ $("#TeamProfile").click(function() {
 
 
 
-function findString (str) {
+/*function findString (str) {
  if (parseInt(navigator.appVersion)<4) return;
  var strFound;
  if (window.find) {
