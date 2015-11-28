@@ -159,14 +159,16 @@ function showPostsWhenWordFound(word)
     console.log(value.date);
     console.log(value.title);
     console.log(value.text);
-    var str = document.getElementsByClassName("group1").innerHTML; 
+    var str = value.date; 
+    var str1 = value.title;
+    var str2 = value.text;
     console.log(word);
     console.log(str);
     console.log("made it 2");
     console.log(str.indexOf(word));
     
     console.log(str.indexOf("cat"));
-    if(str.indexOf(value.date) != -1 || str.indexOf(value.title) != -1 || str.indexOf(value.text) != -1)
+    if(str.indexOf(word) != -1 || str1.indexOf(word) != -1 || str2.indexOf(word) != -1)
     {
       console.log("made it 3");
       $(".group" + num).show();
