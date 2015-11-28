@@ -154,9 +154,11 @@ function showPostsWhenWordFound(word)
   $.each(obj.entries, function(index, value)
   {
     console.log("made it 2");
-    var str = document.getElementById("group" + num).innerHTML; 
     console.log(str.indexOf(word));
     console.log(word);
+    console.log(str.indexOf("cat"));
+    var str = document.getElementById("group" + num).innerHTML; 
+
     if(str.indexOf(word) != -1)
     {
       console.log("made it 3");
