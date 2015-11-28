@@ -143,17 +143,19 @@ function searchFunction()
 
 function showPostsWhenWordFound(word)
 {
+  var num = 0;
   $.each(obj.entries, function(index, value)
   {
-    numOfEntries++;
-    $(".group" + numOfEntries).hide();
+    num++;
+    $(".group" + num).hide();
   })
 
   $.each(obj.entries, function(index, value)
   {
-    if(value.indexOf(word) > -1)
+    var str = document.getElementById("group" + num).innerHTML; 
+    if(str.indexOf(word) > -1)
     {
-      $(".group" + numOfEntries).show();
+      $(".group" + num).show();
     }
   })
 }
