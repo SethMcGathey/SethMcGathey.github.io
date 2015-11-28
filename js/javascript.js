@@ -143,7 +143,7 @@ function searchFunction()
 
 function showPostsWhenWordFound(word)
 {
-  /*var num = 0;
+  var num = 0;
   $.each(obj.entries, function(index, value)
   {
     num++;
@@ -172,7 +172,7 @@ function showPostsWhenWordFound(word)
       console.log("made it 3");
       $(".group" + num).show();
     }
-  })*/
+  })
 }
 
 
