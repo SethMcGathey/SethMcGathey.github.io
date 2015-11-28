@@ -166,7 +166,7 @@ function showPostsWhenWordFound(word)
     console.log(str.indexOf(word));
     
     console.log(str.indexOf("cat"));
-    if(str.indexOf(value.date) != -1)
+    if(str.indexOf(value.date) != -1 || str.indexOf(value.title) != -1 || str.indexOf(value.text) != -1)
     {
       console.log("made it 3");
       $(".group" + num).show();
