@@ -132,12 +132,13 @@ function unhideGroupNext()
 function searchFunction()
 {
   var word = document.getElementById('t1').value
-  
   //RegExp(oldWord, "g")
   //var str = "Mr Blue has a blue house and a blue car";
+  var str = document.getElementById("everything").innerHTML; 
   var res = str.replace(RegExp(word, "gi"), "<mark>" + word + "</mark>");
   document.getElementById("everything").innerHTML = res;
 }
+
 /*
 function showPostsWhenWordFound(word)
 {
