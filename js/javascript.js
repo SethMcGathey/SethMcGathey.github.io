@@ -171,8 +171,8 @@ function showPostsWhenWordFound(word)
     {
       console.log("made it 3");
       $(".group" + num).show();
-    }*/
-  })
+    }
+  })*/
 }
 
 
