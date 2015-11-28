@@ -131,9 +131,10 @@ function unhideGroupNext()
 function searchFunction()
 {
   var word = document.getElementById('t1').value
+  //RegExp(oldWord, "g")
   //var str = "Mr Blue has a blue house and a blue car";
   var str = document.getElementById("everything").innerHTML; 
-  var res = str.replace(word, "<mark>" + word + "</mark>");
+  var res = str.replace(RegExp(word, "g"), "<mark>" + word + "</mark>");
   document.getElementById("everything").innerHTML = res;
 }
 
