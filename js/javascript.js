@@ -137,9 +137,10 @@ function searchFunction()
   var str = document.getElementById("everything").innerHTML; 
   var res = str.replace(RegExp(word, "gi"), "<mark>" + word + "</mark>");
   document.getElementById("everything").innerHTML = res;
+  showPostsWhenWordFound(word);
 }
 
-/*
+
 function showPostsWhenWordFound(word)
 {
   $.each(obj.entries, function(index, value)
@@ -155,7 +156,7 @@ function showPostsWhenWordFound(word)
       $(".group" + numOfEntries).show();
     }
   })
-}*/
+}
 
 
 $("#TeamProfile").click(function() {
