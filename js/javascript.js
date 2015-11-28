@@ -156,6 +156,9 @@ function showPostsWhenWordFound(word)
   {
 
     console.log("made it 4");
+    console.log(value.date);
+    console.log(value.title);
+    console.log(value.text);
     var str = document.getElementsByClassName("group1").innerHTML; 
     console.log(word);
     console.log(str);
@@ -163,7 +166,7 @@ function showPostsWhenWordFound(word)
     console.log(str.indexOf(word));
     
     console.log(str.indexOf("cat"));
-    if(str.indexOf(word) != -1)
+    if(str.indexOf(value.date) != -1)
     {
       console.log("made it 3");
       $(".group" + num).show();
