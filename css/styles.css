@@ -1,18 +1,30 @@
 body{
-	background-image: url("../img/sneaker_mesh_fabric.png");
+	/*background-image: url("../img/tileable_wood_texture.png");*/
 }
 
 h1{
 	font-family:'ABeeZee', serif;
+	color:#FFFFFF;
 }
 p{
 	font-family:'ABeeZee', serif;
+	color:#FFFFFF;
 }
 h3{
 	font-family:'ABeeZee', serif;
+	color:#FFFFFF;
 }
 h5{
 	font-family:'ABeeZee', serif;
+	color:#FFFFFF;
+}
+
+.blueColor{
+	/*background-color: #ABC8C7;*/
+	background-color: #FFFFFF;
+
+	padding:1%;
+	border-radius: 50%;
 }
 
 
@@ -23,50 +35,67 @@ h5{
 .pagination{
 	border:1px;
 	border-style: solid;
-	border-color:#4477BC;
+	border-color:#ED6639;
+	/*border-color:#4477BC;*/
 	padding:4px;
 	padding-left:8px; 
 	padding-right:8px;
-	margin-right: 1px;
-	margin-left:1px;
+	margin-right: 1%;
+	margin-left:1%;
 }
 
 #profpic {
-  max-width: 60%;
+  max-width: 40%;
   display:block;
   margin-right: auto;
   margin-left: auto;
   margin-top: 1%;
   margin-bottom: 1%;
   text-align: center;
+  border-radius: 10px;
 }
 
 .boxedColor{
-	background-color: #88958D;
-	padding:1%;
+	/*background-color: #88958D;*/
+	background-color: #333333;
 	display:block;
+}
+
+.profBorderBox{
+	/*background-color: #88958D;*/
+	background-color: #7E9181;
+	display:block;
+	padding:1%;
+	border-radius: 25px;
 }
 
 .profBoxes{
-	background-color: #DDD8C4;
+	/*background-color: #DDD8C4;*/
+	background-color: #7E9181;
 	margin-bottom: 1%;
 	display:block;
 	padding:1%;
+	border-radius: 25px;
 }
 
 .profLonelyParagraph{
-	background-color: #DDD8C4;
+	/*background-color: #DDD8C4;*/
+	background-color: #7E9181;
 	margin-bottom: 1%;
 	display:block;
 	padding:1%;
+	border-radius: 25px;
+	margin-top: 1%;
 }
 
 .headerColor{
-	background-color: #DDD8C4;
-	width: 60%;
+	/*background-color: #DDD8C4;*/
+	background-color: #7E9181;
+	width: 50%;
 	display:block;
 	margin-right: auto;
     margin-left: auto;
+    border-radius: 25px;
 }
 
 .boxMargin{
@@ -76,7 +105,7 @@ h5{
 .teamPortfolio{
 	margin-left: auto;
 	display:block;
-	margin-bottom: 1%;
+	/*margin-bottom: 1%;*/
 }
 
 .kitePortfolio{
@@ -110,6 +139,40 @@ h5{
   margin-bottom: 1%;
   text-align: center;
 }
+
+
+
+
+
+.navbar-trans li>a{
+    color: #69929B;
+    font-size: 18px;
+}
+.navbar-trans {
+	background-color:none;
+    color:#000;
+    font-family: "Alegreya SC", serif;
+    font-weight: 300;
+    border-radius: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.navbar {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.navbar-trans li>a:hover,.navbar-trans li>a:focus,.navbar-trans li.active {
+	background-color:#ebebeb;
+    font-family: "Alegreya SC", serif;
+    font-weight: 400;
+}
+
+
+
+
+
 
 
 /*@media screen and (min-width: 992px) {
