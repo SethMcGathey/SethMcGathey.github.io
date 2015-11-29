@@ -35,8 +35,8 @@ h5{
 .pagination{
 	border:1px;
 	border-style: solid;
-	border-color:#ED6639;
-	/*border-color:#4477BC;*/
+	/*border-color:#ED6639;*/
+	border-color:#4477BC;
 	padding:4px;
 	padding-left:8px; 
 	padding-right:8px;
