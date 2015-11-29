@@ -19,6 +19,37 @@ h5{
 	color:#FFFFFF;
 }
 
+.wordPressScreenShots{
+	background-color:#FFFFFF;
+
+	max-width: 100%;
+  	display:block;
+  	/*margin-right: auto;
+  	margin-left: auto;*/
+  	margin-top: 1%;
+  	margin-bottom: 1%;
+  	text-align: center;
+}
+
+.scrollBoxContainer{
+	background-color:#787878;
+	padding-top:1%;
+	padding-bottom: 1%;
+	margin-bottom: 3%;
+	margin-top: 3%;
+}
+
+.fullScrollBox{
+	overflow:auto; 
+	height:290px;
+}
+
+.mobileScrollBox{
+	overflow:auto; 
+	height:500px;
+}
+
+
 .blueColor{
 	/*background-color: #ABC8C7;*/
 	background-color: #FFFFFF;
