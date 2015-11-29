@@ -14,9 +14,17 @@ h3{
 	font-family:'ABeeZee', serif;
 	color:#FFFFFF;
 }
+h4{
+	font-family:'ABeeZee', serif;
+	color:#FFFFFF;
+}
 h5{
 	font-family:'ABeeZee', serif;
 	color:#FFFFFF;
+}
+
+.wordPressTitles{
+	margin-top: 3%;
 }
 
 .wordPressScreenShots{
@@ -41,12 +49,12 @@ h5{
 
 .fullScrollBox{
 	overflow:auto; 
-	height:290px;
+	height:35%;
 }
 
 .mobileScrollBox{
 	overflow:auto; 
-	height:500px;
+	height:50%;
 }
 
 
@@ -83,7 +91,23 @@ h5{
   margin-top: 1%;
   margin-bottom: 1%;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 50%;
+  border:solid;
+  border-color: #000000;
+  border-width: 1%;
+}
+
+.footerColor{
+	margin-top: 10%;
+	background-color: #787878;
+	text-align: center;
+}
+
+.footerBorder{
+
+  border-top: solid;
+  border-color: #000000;
+  border-width: 1%;
 }
 
 .boxedColor{
@@ -94,7 +118,7 @@ h5{
 
 .profBorderBox{
 	/*background-color: #88958D;*/
-	background-color: #7E9181;
+	/*background-color: #787878;*/
 	display:block;
 	padding:1%;
 	border-radius: 25px;
@@ -102,16 +126,22 @@ h5{
 
 .profBoxes{
 	/*background-color: #DDD8C4;*/
-	background-color: #7E9181;
+	background-color: #787878;
 	margin-bottom: 1%;
 	display:block;
-	padding:1%;
+	/*padding:1%;*/
 	border-radius: 25px;
+
+	border:solid;
+  	border-color: #000000;
+  	border-width: 1%;
+  	padding:5%;
+
 }
 
 .profLonelyParagraph{
 	/*background-color: #DDD8C4;*/
-	background-color: #7E9181;
+	background-color: #787878;
 	margin-bottom: 1%;
 	display:block;
 	padding:1%;
@@ -121,7 +151,7 @@ h5{
 
 .headerColor{
 	/*background-color: #DDD8C4;*/
-	background-color: #7E9181;
+	background-color: #787878;
 	width: 50%;
 	display:block;
 	margin-right: auto;
