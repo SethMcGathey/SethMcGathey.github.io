@@ -45,6 +45,17 @@ h5{
 	padding-bottom: 1%;
 	margin-bottom: 3%;
 	margin-top: 3%;
+	border-radius: 25px;
+}
+
+.teamScrollBox{
+	overflow:auto; 
+	height:35%;
+}
+
+.businessScrollBox{
+	overflow:auto; 
+	height:35%;
 }
 
 .fullScrollBox{
@@ -55,6 +66,20 @@ h5{
 .mobileScrollBox{
 	overflow:auto; 
 	height:50%;
+}
+
+.portfolioImages{
+  max-width:65%;
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-align: center;
+  border-radius: 70px;
+  border:solid;
+  border-color: #000000;
+  border-width: 1%;
 }
 
 
@@ -83,6 +108,20 @@ h5{
 	margin-left:1px;
 }
 
+.teamPagePic {
+  max-width: 40%;
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-align: center;
+  border-radius: 50%;
+  border:solid;
+  border-color: #000000;
+  border-width: 1%;
+}
+
 #profpic {
   max-width: 40%;
   display:block;
@@ -98,7 +137,7 @@ h5{
 }
 
 .footerColor{
-	margin-top: 10%;
+	margin-top: 5%;
 	background-color: #787878;
 	text-align: center;
 }
