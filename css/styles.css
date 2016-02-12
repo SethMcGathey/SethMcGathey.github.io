@@ -175,9 +175,21 @@
 
 
 
+
 body{
     /*background-image: url("../img/tileable_wood_texture.png");*/
+
 }
+/*@media only screen and (max-width: 1154px){
+	body{
+	    /*background-image: url("../img/tileable_wood_texture.png");
+	    float:left;
+	    background-color: yellow;
+	    height: 150%;
+	    overflow:auto;
+	    display: block;
+	}
+}*/
 
 h1{
     font-family:'ABeeZee', serif;
@@ -330,11 +342,7 @@ h5{
   border-width: 1%;
 }
 
-.boxedColor{
-    /*background-color: #88958D;*/
-    background-color: #333333;
-    display:block;
-}
+
 
 .profBorderBox{
     /*background-color: #88958D;*/

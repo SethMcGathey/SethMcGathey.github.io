@@ -1,6 +1,10 @@
 body{
-  display:block;
-  background-image: url(../img/grey.png);
+	display:block;
+	background-image: url(../img/grey.png);
+}
+
+p{
+	font-size: 15px;
 }
 
 #sideBarProfpic {
@@ -10,8 +14,8 @@ body{
   margin-bottom: 1%;
 
 
-    border:solid;
-    border-color: rgba(1,1,1,.5);
+  	border:solid;
+  	border-color: rgba(1,1,1,.5);
   /*border-radius: 50%;*/
   /*border:solid;
   border-color: #000000;
@@ -19,54 +23,54 @@ body{
   float: left;*/
 }
 .navbarContentContainer{
-  width:65%;
+	width:65%;
 
-  vertical-align: top;
-  margin:0 auto;
-  overflow: hidden;
+	vertical-align: top;
+	margin:0 auto;
+	overflow: hidden;
 }
 
 .fullNavbarContainer{
-  width:70%;
-  text-align: center;
-  margin: 0 auto;
+	width:70%;
+	text-align: center;
+	margin: 0 auto;
 }
 
 
 .navBar{
-  background-color: rgba(1,1,1,.2);
-  padding-top: 1%;
+	background-color: rgba(1,1,1,.2);
+	padding-top: 1%;
 
-  border-bottom:solid;
-  border-color: rgba(1,1,1,.5);
+	border-bottom:solid;
+	border-color: rgba(1,1,1,.5);
 }
 
 .navbarText{
-  font-size: 22px;
-  color: black;
+	font-size: 22px;
+	color: black;
 }
 
 .navbarButtonsContainer{
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .navigationButtons{
-  /*float: left;*/
-  font-size: 25px;
-  color: black;
-  text-align: center;
+	/*float: left;*/
+	font-size: 25px;
+	color: black;
+	text-align: center;
 }
 
 .nameHeader{
-  color:black
+	color:black
 }
 
 .naviagtionStyle{
-  color: black;
+	color: black;
 }
 
 .navbarContainer{
-  background-color: rgba(1,1,1,.2);
+	background-color: rgba(1,1,1,.2);
 }
 
 /*.profBoxes{
@@ -84,40 +88,40 @@ body{
 }*/
 
 .profBoxes{
-  /*background-color: #DDD8C4;*/
-  background-color: rgba(1,1,1,.2);
-  margin-bottom: 1%;
-  display:block;
-  /*padding:1%;*/
-  border-radius: 3px;
-  overflow: none;
-    border-width: 1%;
+	/*background-color: #DDD8C4;*/
+	background-color: rgba(1,1,1,.2);
+	margin-bottom: 1%;
+	display:block;
+	/*padding:1%;*/
+	border-radius: 3px;
+	overflow: none;
+  	border-width: 1%;
 
-    padding:2%; 
-    height:160px;
+  	padding:2%; 
+  	height:180px;
 
-    border:solid;
-    border-color: rgba(1,1,1,.5);
+  	border:solid;
+  	border-color: rgba(1,1,1,.5);
 }
 
 #TeamProfile{
-  width:45%;
-  float: left;
+	width:45%;
+	float: left;
 }
 
 #KiteTeamProfile{
-  width:54%;
-  float: right;
+	width:54%;
+	float: right;
 }
 
 #EcommerceProfile{
-  width:54%;
-  float: left;
+	width:54%;
+	float: left;
 }
 
 #JSfiddleCloneProfile{
-  width:45%;
-  float: right;
+	width:45%;
+	float: right;
 }
 
 .pageContent{
@@ -125,59 +129,225 @@ body{
 
 
 .containerWithFooter{
-  position:relative;
+	position:relative;
 }
 
 .footerText{
-  margin-bottom: 1%;
-  display:block;
-  /*padding:1%;*/
-  border-radius: 3px;
-  overflow: none;
-    border-width: 1%;
+	margin-bottom: 1%;
+	display:block;
+	/*padding:1%;*/
+	border-radius: 3px;
+	overflow: none;
+  	border-width: 1%;
 }
 
 #name{
-  
+	
 }
 
 #number{
-  display:block;
-  float:left;
+	display:block;
+	float:left;
 }
 
 #email{
-  display:block;
-  float:left;
-  margin-right:15%;
-  margin-left:15%;
+	display:block;
+	float:left;
+	margin-right:15%;
+	margin-left:15%;
 }
 
 #linkedin{
-  display: block;
-  float:left;
+	display: block;
+	float:left;
 }
 
 .footerBorder{
-  width:500px;
-  margin: 0 auto;
+	width:500px;
+	margin: 0 auto;
 }
 
 .container{
-  margin-top: 3%;
-  margin-bottom: 3%;
-  overflow:auto;
-  display: block;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	overflow:auto;
+	display: block;
 }
+/*
+.wordpressLogoAndButtonsContainer{
+	border:solid;
+  	border-color: rgba(1,1,1,.5);
+	background-color: rgba(1,1,1,.2);
+	padding:1%;
+    border-radius: 3px;
+    float:right;
+    width:49%;
+    height:220px;
+
+}
+
+.spaceingDiv{
+	margin-bottom: 2%;
+}
+
+.headerAndParagraphContainer{
+	border:solid;
+  	border-color: rgba(1,1,1,.5);
+	background-color: rgba(1,1,1,.2);
+	padding:1%;
+    border-radius: 3px;
+    float:left;
+    width:49%;
+    height:220px;
+}*/
+
+.wordpressLogoAndButtonsContainer{
+	border:solid;
+  	border-color: rgba(1,1,1,.5);
+	background-color: rgba(1,1,1,.2);
+	padding:1%;
+    border-radius: 3px;
+    margin-top:2%;
+}
+
+.headerAndParagraphContainer{
+	border:solid;
+  	border-color: rgba(1,1,1,.5);
+	background-color: rgba(1,1,1,.2);
+	padding:1%;
+	padding-bottom:2%;
+    border-radius: 3px;
+    margin:0 auto;
+    width:60%;
+}
+
+
+
+.wordpressParagraph{
+	text-align: center;
+}
+
+.wordpressPageHeader{
+	text-align: center;
+}
+
+.wordpressTitle{
+	text-align: center;
+}
+
+.wordPressScreenShots{
+	width:500px;
+}
+
+.wordpressPagePicker{
+	font-size: 20px;
+	text-align: center; 
+}
+
+.wordpressImageFullSize{
+	width:100%;
+}
+
+.wordpressImageMobileSize{
+	width:100%;
+}
+
+.wordpressImageContainer{
+	/*height: 500px;*/
+	border:solid;
+  	border-color: rgba(1,1,1,.5);
+	background-color: rgba(1,1,1,.2);
+	/*background-color:#787878;*/
+	padding:2%;
+    /*padding-top:1%;
+    padding-bottom: 1%;
+    margin-bottom: 3%;*/
+    margin-top: 2%;
+    /*border-radius: 25px;*/
+    border-radius: 3px;
+    float:left;
+}
+
+.wordpressFullScrollBox{
+	overflow-y: scroll;
+	height:350px;
+}
+
+.wordpressMobileScrollBox{
+	overflow-y: scroll;
+	height:350px;
+}
+@media screen and (min-width: 993px) {
+	.wordpressDesktopContainer{
+		float:left;
+		width:49%;
+	}
+
+	.wordpressMobileContainer{
+		float:right;
+		width:49%;
+	}
+}
+
+.wordpressDesktopLabel{
+	text-align: center;
+	font-size: 25px;
+}
+
+.wordpressMobileLabel{
+	text-align: center;
+	font-size: 25px;
+}
+
+.wordpressHeaderImage{
+    max-width: 48.5%;
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 993px) {
+	.wordpressDesktopContainer{
+		display: block;
+		margin:0 auto;
+		width:80%;
+	}
+
+	.wordpressMobileContainer{
+		display: block;
+		margin:0 auto;
+		width:80%;
+	}
+
+	.wordpressFullScrollBox{
+		overflow-y: scroll;
+		height:400px;
+		margin-bottom: 2%;
+	}
+
+	.wordpressMobileScrollBox{
+		overflow-y: scroll;
+		height:400px;
+		margin-bottom: 1%;
+	}
+}
+
+
+
+
 
 footer{
-  text-align: center;
-  background-color: rgba(1,1,1,.2);
-  position:fixed;bottom:0;
-  width:100%;
-  margin: 0 auto;
-  overflow:hidden;
+	text-align: center;
+	background-color: rgba(1,1,1,.2);
+	/*position:fixed;bottom:0;*/
+	bottom:0;
+	width:100%;
+	margin: 0 auto;
+	overflow:hidden;
 
-  border-top:solid;
-  border-color: rgba(1,1,1,.5);
+	border-top:solid;
+	border-color: rgba(1,1,1,.5);
 }
+
