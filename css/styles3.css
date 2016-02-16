@@ -8,6 +8,10 @@ p{
 	font-size: 15px;
 }
 
+.profilePicContainer{
+
+}
+
 #sideBarProfpic {
   max-width: 300px;
   display: block;
@@ -15,21 +19,32 @@ p{
   margin-bottom: 1%;
   margin-top:2%;
 
-  border:solid;
-  border-color: rgba(1,1,1,.5);
+  border-right:solid;
+  border-color: rgba(1,1,1,0);
+  border-width: 10px;
   /*border-radius: 50%;*/
   /*border:solid;
   border-color: #000000;
   border-width: 1%;
   float: left;*/
 }
+
 .navbarContentContainer{
 	/*width:60%;*/
 	width:800px;
 	vertical-align: top;
 	margin:0 auto;
 	overflow: hidden;
+}
 
+@media screen and (max-width: 817px) {
+	.navbarContentContainer{
+		/*width:60%;*/
+		width:300px;
+		vertical-align: top;
+		margin:0 auto;
+		overflow: hidden;
+	}
 }
 
 
@@ -52,6 +67,7 @@ p{
 .navbarText{
 	font-size: 22px;
 	color: black;
+	padding-left:1%;
 }
 
 .navbarButtonsContainer{
@@ -85,8 +101,8 @@ p{
 	  float:none;
 	  margin: 0 auto;
 
-	  border:solid;
-	  border-color: rgba(1,1,1,.5);
+	  /*border:solid;
+	  border-color: rgba(1,1,1,.5);*/
 	  /*border-radius: 50%;*/
 	  /*border:solid;
 	  border-color: #000000;
