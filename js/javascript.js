@@ -213,7 +213,18 @@ $('#wordpressMeetTheTeamPageButton').click( function() {
 } );
 
 
+$(document).ready(function(){
 
+  /* prepend menu icon */
+  //$('#navbarButtonsContainerId').prepend('<div id="menu-icon">Menu</div>');
+  
+  /* toggle nav */
+  /*$("#menuIcon").on("click", function(){
+    $("navigationButtons").slideToggle();
+    $(this).toggleClass("active");
+  });*/
+
+});
 
 
 /*function findString (str) {
@@ -276,3 +287,40 @@ $('#wordpressMeetTheTeamPageButton').click( function() {
     });        
 }*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+          <nav id="nav-wrap"><!--<nav id="nav-wrap" class="navbarButtonsContainer">-->
+            <ul id-"nav"><!--<ul id-"nav" class="navigationButtons">-->
+                  <!--<li> <a class="naviagtionStyle" href="index.html">Home</a></li> |  
+                  <li> <a class="naviagtionStyle" href="TSuroClone.html">TSuro Clone</a></li> | 
+                  <li> <a class="naviagtionStyle" href="blog.html">Blog</a></li> |
+                  <li> <a class="naviagtionStyle" href="businessProject.html">Business Project</a></li> | 
+                  <li> <a class="naviagtionStyle" href="wordpressPage.html">Wordpress Project</a></li> | 
+                  <li> <a class="naviagtionStyle" href="teamProject.html">Team Project</a></li> | 
+                  <li> <a class="naviagtionStyle" href="siteIndex.html">Site Index</a></li>-->
+
+                  <li> <a href="index.html">Home</a></li> |  
+                  <li> <a href="TSuroClone.html">TSuro Clone</a></li> | 
+                  <li> <a href="blog.html">Blog</a></li> |
+                  <li> <a href="businessProject.html">Business Project</a></li> | 
+                  <li> <a href="wordpressPage.html">Wordpress Project</a></li> | 
+                  <li> <a href="teamProject.html">Team Project</a></li> | 
+                  <li> <a href="siteIndex.html">Site Index</a></li>
+            </ul>
+          </nav>
+
+          */

@@ -37,6 +37,7 @@ p{
 	overflow: hidden;
 }
 
+
 @media screen and (max-width: 817px) {
 	.navbarContentContainer{
 		/*width:60%;*/
@@ -45,8 +46,13 @@ p{
 		margin:0 auto;
 		overflow: hidden;
 	}
+	#menuIcon{
+		display:block;
+	}
 }
-
+#menuIcon{
+	display:none;
+}
 
 .fullNavbarContainer{
 	width:70%;
@@ -82,7 +88,20 @@ p{
 	padding-right:3%;
 	text-align: center;
 
-}/*
+}
+@media screen and (max-width: 714px) {
+	.navigationButtons{
+	/*float: left;*/
+	font-size: 25px;
+	color: black;
+	margin: 0 auto;
+	padding-right:3%;
+	text-align: center;
+
+}
+}
+
+	/*
 @media screen and (max-width: 1271px) {
 	.navigationButtons{
 		font-size: 25px;
