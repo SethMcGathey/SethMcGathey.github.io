@@ -1,4 +1,4 @@
-
+/*
 var obj; 
 var current = 1;
 var showThisMany = 3;
@@ -27,7 +27,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
   unhideGroup(1);
 
 })
-
+*/
 function hidePrevButton()
 {
   $("#prev").hide();
@@ -219,10 +219,11 @@ $(document).ready(function(){
   //$('#navbarButtonsContainerId').prepend('<div id="menu-icon">Menu</div>');
   
   /* toggle nav */
-  /*$("#menuIcon").on("click", function(){
-    $("navigationButtons").slideToggle();
+  $("#menuIcon").on("click", function(){
+    $("#mobileButtons").slideToggle();
     $(this).toggleClass("active");
-  });*/
+    //$("#bottomButtons").slideToggle();
+  });
 
 });
 
