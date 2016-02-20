@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!--<link rel="stylesheet" type="text/css" href="css/styles.css">-->
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=ABeeZee">
-    <link rel="stylesheet" type="text/css" href="css/styles3.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!--<link rel="icon" href="projects/kiteProject/assets/img/favicon.png" type="image/gif" >
     <link rel="icon" href="img/SMFavicon.png" type="image/gif" >-->
   </head>
@@ -19,22 +19,42 @@
 
               <div class="profilPicContainer">
               
-              <img  src='img/sethProfilePic.jpg' alt='Seth McGathey at DevCodeCamp.' id="sideBarProfpic"/>
+              <img  src='img/sethProfilePic.jpg' title='Profile Picture' alt='Seth McGathey at DevCodeCamp.' id="sideBarProfpic"/>
               </div>
               <h1 class="NameHeader">Seth McGathey</h1>
               <div><h4 class="navbarText">Seth is a programmer with his bachelors degree in computer science from Wisconsin Lutheran College. Even though he already had his degree he chose to further his programming knowledge by attending the Milwaukee DevCodeCamp.</h4>
               </div>
           </div>
-          <div class="navbarButtonsContainer">
-            <ul class="navigationButtons">
+          <div id="navbarButtonsContainerId" class="navbarButtonsContainer">
+
+            <div id="menuIcon">Menu</div>
+            <ul class="navigationButtons" id="topButtons">
                   <a class="naviagtionStyle" href="index.html">Home</a> |  
+                  <a class="naviagtionStyle" href="TSuroClone.html">JSFiddle Clone</a> |
+                  <a class="naviagtionStyle" href="ecommercePage.html">Ecommerce Site</a> |
+                  <a class="naviagtionStyle" href="wordpressPage.html">Wordpress Site</a> | 
+                  <a class="naviagtionStyle" href="businessProject.html">Business Site</a> 
+            </ul>
+            <ul class="navigationButtons" id="bottomButtons">
                   <a class="naviagtionStyle" href="TSuroClone.html">TSuro Clone</a> | 
+                  <a class="naviagtionStyle" href="teamProject.html">Team Site</a> | 
+                  <a class="naviagtionStyle" href="teamProject.html">Resume</a> |
                   <a class="naviagtionStyle" href="blog.html">Blog</a> |
-                  <a class="naviagtionStyle" href="businessProject.html">Business Project</a> | 
-                  <a class="naviagtionStyle" href="wordpressPage.html">Wordpress Project</a> | 
-                  <a class="naviagtionStyle" href="teamProject.html">Team Project</a> | 
                   <a class="naviagtionStyle" href="siteIndex.html">Site Index</a>
-            </ul><br>
+            </ul>
+
+            <ul class="navigationButtons" id="mobileButtons">
+                  <a class="naviagtionStyle" href="index.html">Home</a>   
+                  <a class="naviagtionStyle" href="TSuroClone.html">JSFiddle Clone</a>
+                  <a class="naviagtionStyle" href="ecommercePage.html">Ecommerce Site</a> 
+                  <a class="naviagtionStyle" href="wordpressPage.html">Wordpress Site</a> 
+                  <a class="naviagtionStyle" href="businessProject.html">Business Site</a> 
+                  <a class="naviagtionStyle" href="TSuroClone.html">TSuro Clone</a> 
+                  <a class="naviagtionStyle" href="teamProject.html">Team Site</a> 
+                  <a class="naviagtionStyle" href="teamProject.html">Resume</a>
+                  <a class="naviagtionStyle" href="blog.html">Blog</a>
+                  <a class="naviagtionStyle" href="siteIndex.html">Site Index</a>
+            </ul>
           </div>
         </div>
 
@@ -69,80 +89,13 @@
 
 
 
-            <p class="wordpressParagraph">This game was a project completed by Seth McGathey, Becky Gahart, and Matt Cordier. Although roles were not implicetly defined, we each settled into roles that seemed natural. Matt handled most of the graphics and visual layout of the game, Becky handled the Node.js comnnections between the user screens and console screen, and Seth handled the overall game logic.</p>
-
+            <p class="wordpressParagraph">This game was a project completed by Seth McGathey, Becky Gahart, and Matt Cordier. Although roles were not implicetly defined, each person settled into roles that seemed natural. Matt handled most of the graphics and visual layout of the game, Becky handled the Node.js comnnections between the user screens and console screen, and Seth handled the overall game logic.</p>
+            <p id="tsuroLink"><a href="http://45.55.63.94:8080/" target="_blank">Link to Tsuro Site </a></p>
+            <p id="tsuroLink">(This link will only work if Seth run it in the server. If you would like to see the live version please contact Seth at seth.mcgathey@gmail.com and he will setup a time to run it for you.)</p>
             <!--<img class="centerText wordpressHeaderImage" src='img/CCC_logo.png' alt='Kite logo.' />-->
           </div>
 
-          <div class="wordpressLogoAndButtonsContainer">
-            <p class="wordpressTitle">Choose a TSuro Page to Scroll Through</p>
-            <p class="wordpressPagePicker">
-              <a id="wordpressHomeButton">Home Page</a> | <a id="wordpressContactPageButton">Contact Page</a> | <a id="wordpressProductPageButton">Product Page</a> | <a id="wordpressMeetTheTeamPageButton">Meet the Team Page</a>
-            </p>
-          </div>
-
-              <div class="wordpressImageContainer" id="wordpressHomePage">
-                <div class="wordpressDesktopContainer">
-                  <p class="wordpressDesktopLabel">Desktop View</p>
-                  <div class="wordpressFullScrollBox">
-                    <img class="centerText wordpressImageFullSize" src='img/wordPressScreenshots/lg-homepage.jpg' alt='Home page of website.'/>
-                  </div><!--wordpressFullScrollBox-->
-                </div><!--wordpressDesktopContainer-->
-                <div class="wordpressMobileContainer">
-                  <p class="wordpressMobileLabel">Mobile View</p>
-                  <div class="wordpressMobileScrollBox">
-                    <img class="centerText wordpressImageMobileSize" src='img/wordPressScreenshots/sm-home.jpg' alt='Home page of website.'/>
-                  </div><!--wordpressMobileScrollBox-->
-                </div><!--wordpressMobileContainer-->
-              </div><!--wordpressImageContainer-->
-
-
-              <div class="wordpressImageContainer" id="wordpressContactPage">
-                <div class="wordpressDesktopContainer">
-                  <p class="wordpressDesktopLabel">Desktop View</p>
-                  <div class="wordpressFullScrollBox">
-                    <img class="centerText wordpressImageFullSize" src='img/wordPressScreenshots/lg-contact.jpg' alt='Seths profile page of website.'/>
-                  </div><!--wordpressFullScrollBox-->
-                </div><!--wordpressDesktopContainer-->
-                <div class="wordpressMobileContainer">
-                  <p class="wordpressMobileLabel">Mobile View</p>
-                  <div class="wordpressMobileScrollBox">
-                    <img class="centerText wordpressImageMobileSize" src='img/wordPressScreenshots/sm-contact.jpg' alt='Seths profile page of website.'/>
-                  </div><!--wordpressMobileScrollBox-->
-                </div><!--wordpressMobileContainer-->
-              </div><!--wordpressImageContainer-->
-
-
-              <div class="wordpressImageContainer" id="wordpressProductPage">
-                <div class="wordpressDesktopContainer">
-                  <p class="wordpressDesktopLabel">Desktop View</p>
-                  <div class="wordpressFullScrollBox">
-                   <img class="centerText wordpressImageFullSize" src='img/wordPressScreenshots/lg-product.jpg' alt='Scotts profile page of website.'/>
-                  </div><!--wordpressFullScrollBox-->
-                </div><!--wordpressDesktopContainer-->
-                <div class="wordpressMobileContainer">
-                  <p class="wordpressMobileLabel">Mobile View</p>
-                  <div class="wordpressMobileScrollBox">
-                    <img class="centerText wordpressImageMobileSize" src='img/wordPressScreenshots/sm-product.jpg' alt='Scotts profile page of website.'/>
-                  </div><!--wordpressMobileScrollBox-->
-                </div><!--wordpressMobileContainer-->
-              </div><!--wordpressImageContainer-->
-
-
-              <div class="wordpressImageContainer" id="wordpressTeamPage">
-                <div class="wordpressDesktopContainer">
-                  <p class="wordpressDesktopLabel">Desktop View</p>
-                  <div class="wordpressFullScrollBox">
-                     <img class="centerText wordpressImageFullSize" src='img/wordPressScreenshots/lg-teampage.jpg' alt='Portfolio page of website.'/>
-                  </div><!--wordpressFullScrollBox-->
-                </div><!--wordpressDesktopContainer-->
-                <div class="wordpressMobileContainer">
-                  <p class="wordpressMobileLabel">Mobile View</p>
-                  <div class="wordpressMobileScrollBox">
-                    <img class="centerText wordpressImageMobileSize" src='img/wordPressScreenshots/sm-about.jpg' alt='Portfolio page of website.'/>
-                  </div><!--wordpressMobileScrollBox-->
-                </div><!--wordpressMobileContainer-->
-              </div><!--wordpressImageContainer-->
+              
             </div><!--pageContent-->
 
 

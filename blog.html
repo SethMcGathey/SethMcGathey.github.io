@@ -1,45 +1,69 @@
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<title>Seth McGathey Portfolio</title>
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Seth McGathey Portfolio</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/styles.css">-->
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!--<link rel="icon" href="projects/kiteProject/assets/img/favicon.png" type="image/gif" >
     <link rel="icon" href="img/SMFavicon.png" type="image/gif" >-->
-	</head>
+  </head>
 
-	<body class="boxedColor"> 
+      <div class="navBar">
+                  
+        <div class="fullNavbarContainer">
+          <div class="navbarContentContainer">
 
-  <nav class="navbar navbar-inverse">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
-            </button>
-            <a class="navbar-brand" href="#">Seth McGathey</a>
-          </div><!--end navbar-header-->
-          <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li class="active"><a href="blog.html">Blog</a></li>
-                <li><a href="businessProject.html">Business Project</a></li>
-                <li><a href="wordpressPage.html">Wordpress Project</a></li>
-                <li><a href="teamProject.html">Team Project</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="siteIndex.html"></span>Site Index</a></li>
-              </ul>
-          </div><!--end collapse navbar-brand-->
-    </nav>
+              <div class="profilPicContainer">
+              
+              <img  src='img/sethProfilePic.jpg' title='Profile Picture.' alt='Seth McGathey at DevCodeCamp.' id="sideBarProfpic"/>
+              </div>
+              <h1 class="NameHeader">Seth McGathey</h1>
+              <div><h4 class="navbarText">Seth is a programmer with his bachelors degree in computer science from Wisconsin Lutheran College. Even though he already had his degree he chose to further his programming knowledge by attending the Milwaukee DevCodeCamp.</h4>
+              </div>
+          </div>
+          <div id="navbarButtonsContainerId" class="navbarButtonsContainer">
 
+            <div id="menuIcon">Menu</div>
+            <ul class="navigationButtons" id="topButtons">
+                  <a class="naviagtionStyle" href="index.html">Home</a> |  
+                  <a class="naviagtionStyle" href="TSuroClone.html">JSFiddle Clone</a> |
+                  <a class="naviagtionStyle" href="ecommercePage.html">Ecommerce Site</a> |
+                  <a class="naviagtionStyle" href="wordpressPage.html">Wordpress Site</a> | 
+                  <a class="naviagtionStyle" href="businessProject.html">Business Site</a> 
+            </ul>
+            <ul class="navigationButtons" id="bottomButtons">
+                  <a class="naviagtionStyle" href="TSuroClone.html">TSuro Clone</a> | 
+                  <a class="naviagtionStyle" href="teamProject.html">Team Site</a> | 
+                  <a class="naviagtionStyle" href="teamProject.html">Resume</a> |
+                  <a class="naviagtionStyle" href="blog.html">Blog</a> |
+                  <a class="naviagtionStyle" href="siteIndex.html">Site Index</a>
+            </ul>
 
+            <ul class="navigationButtons" id="mobileButtons">
+                  <a class="naviagtionStyle" href="index.html">Home</a>   
+                  <a class="naviagtionStyle" href="TSuroClone.html">JSFiddle Clone</a>
+                  <a class="naviagtionStyle" href="ecommercePage.html">Ecommerce Site</a> 
+                  <a class="naviagtionStyle" href="wordpressPage.html">Wordpress Site</a> 
+                  <a class="naviagtionStyle" href="businessProject.html">Business Site</a> 
+                  <a class="naviagtionStyle" href="TSuroClone.html">TSuro Clone</a> 
+                  <a class="naviagtionStyle" href="teamProject.html">Team Site</a> 
+                  <a class="naviagtionStyle" href="teamProject.html">Resume</a>
+                  <a class="naviagtionStyle" href="blog.html">Blog</a>
+                  <a class="naviagtionStyle" href="siteIndex.html">Site Index</a>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+<body>
+<div class="containerWithFooter">
   <div class="container boxedColor" id="everything"> 
-  	
+    
       <div class="row centerText boxedColor">
         <form id="f1" name="f1" action="" onSubmit="searchFunction()">
           <input type="text" id="t1" name="t1" placeholder="Search Word" size=20>
@@ -58,19 +82,22 @@
         </div>
       </div><!--row-->
     </div><!--container-->
-
-
-    <!--JS files-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/javascript.js"></script>
-  </body>
   <footer class="footerColor">
-    <div class="row footerBorder">
-        <h3>Seth McGathey</h3>
-        <h5>Contact Info</h5>
-        <p>Phone Number: 708-297-0996</p>
-        <a href="mailto:seth.mcgathey@gmail.com?Subject=In%20regards%20to%20your%20portfolio." target="_top"><p>Email: seth.mcgathey@gmail.com</p></a>
+    <div class="footerBorder">
+        <p class="footertext" id="name">Seth McGathey</p>
+        <p class="footertext" id="number">708-297-0996</p>
+        <a class="footertext" id="email" href="mailto:seth.mcgathey@gmail.com?Subject=In%20regards%20to%20your%20portfolio." target="_top"><p>seth.mcgathey@gmail.com</p></a>
+        <p class="footertext" id="linkedIn">linkedin link</p>
+        
     </div>
   </footer>
+  </div>
+  <!--JS file-->
+    <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/javascript.js"></script>
+
+
+  </body>
 </html>

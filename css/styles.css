@@ -79,7 +79,7 @@ p{
 		border:solid 1px #666;
 		display:block;
 	}*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 714px){
 	#menuIcon{
 		color:#000;
 		width: 42px;
@@ -151,12 +151,21 @@ p{
 	text-align: center;
 
 }
+@media screen and (min-width: 714px) {
+	#menuIcon{
+		display: none;
+	}
+	#mobileButtons{
+		display: none;
+	}
+}
 @media screen and (max-width: 714px) {
 	#topButtons{
 		display:none;
 	}
 	#bottomButtons{
 		display:none;
+
 	}
 	.navigationButtons{
 	/*float: left;*/
@@ -166,6 +175,10 @@ p{
 	padding-right:3%;
 	text-align: center;
 	}
+	#menuIcon{
+		display: block;
+	}
+
 }
 
 	/*
@@ -179,6 +192,65 @@ p{
 		width:800px;
 	}
 }*/
+#tsuroLink{
+	text-align: center;
+}
+
+#marginContainer{
+	margin-top:2%;
+}
+
+#teamImage{
+	width: 300px;
+}
+
+#teamImageContainer{
+	border:solid;
+  	border-color: rgba(1,1,1,.5);
+	background-color: rgba(1,1,1,.2);
+	padding:1%;
+    border-radius: 3px;
+    margin-top:4%;
+    width: 330px;
+    margin:0 auto;
+}
+
+.kiteDirectionsContainer{
+	border:solid;
+  	border-color: rgba(1,1,1,.5);
+	background-color: rgba(1,1,1,.2);
+	padding:1%;
+    border-radius: 3px;
+    margin-top:2%;
+    width: 200px;
+    margin:0 auto;
+}
+
+#kiteLogoDirections{
+	text-align: center;
+	padding-top:2%;
+
+}
+
+#kiteImage{
+	margin-top: 2%;
+	background-color: rgba(1,1,1,.2);
+	border:solid;
+	border-color: rgba(1,1,1,.5);
+	width: 200px;
+}
+#kiteLogoContainer{
+	text-align: center;
+}
+
+.miniHeaders{
+	text-align: center;
+}
+
+.businessScreenshots{
+	width:250px;
+	text-align: center;
+}
 
 @media screen and (max-width: 816px) {
 	#sideBarProfpic {
