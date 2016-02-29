@@ -5,28 +5,23 @@ body{
 }
 
 p{
-	font-size: 15px;
+	font-size:15px;
 }
 
-.profilePicContainer{
 
-}
 
-#sideBarProfpic {
+
+/*vvvvvvvvvvvvvvv constant vvvvvvvvvvvvvvvvv*/
+#navBarProfpic {
   max-width: 300px;
   display: block;
   float:left;
-  margin-bottom: 1%;
+  margin-bottom:1%;
   margin-top:2%;
 
   border-right:solid;
   border-color: rgba(1,1,1,0);
   border-width: 10px;
-  /*border-radius: 50%;*/
-  /*border:solid;
-  border-color: #000000;
-  border-width: 1%;
-  float: left;*/
 }
 
 .navbarContentContainer{
@@ -35,86 +30,7 @@ p{
 	vertical-align: top;
 	margin:0 auto;
 	overflow: hidden;
-}/*
-@media screen and (min-width: 817px) {
-	#menuIcon{
-		display:none;
-	}
 }
-@media screen and (max-width: 817px) {
-	.navbarContentContainer{
-		/*width:60%;//
-		width:300px;
-		vertical-align: top;
-		margin:0 auto;
-		overflow: hidden;
-	}
-	#menuIcon{
-		display:block;
-	}
-	.navigationButtons{
-		/*float: left;//
-		font-size: 25px;
-		color: black;
-		margin: 0 auto;
-		padding-right:3%;
-		text-align: center;
-		display: none;
-
-	}
-}
-*/
-/*@media screen and (min-width: 600px){
-	#menu-icon{
-		display: none;
-	}
-}*/
-	/*#menu-icon{
-		color:#000;
-		width: 42px;
-		height: 30px;
-		background: #ecebeb;
-		padding: 8px 10px 0 42px;
-		cursor: pointer;
-		border:solid 1px #666;
-		display:block;
-	}*/
-@media screen and (max-width: 714px){
-	#menuIcon{
-		color:#000;
-		width: 42px;
-		height: 30px;
-		background: #ecebeb;
-		padding: 8px 10px 0 42px;
-		cursor: pointer;
-		border:solid 1px #666;
-		display:block;
-	}
-	#navigationButtons{
-		clear:both;
-		position: absolute;
-		top: 38px;
-		width: 160px;
-		z-index: 10000;
-		padding: 5px;
-		background: #f8f8f8;
-		border: solid 1px #999;
-		display: none;
-	}
-	#mobileButtons{
-		clear:both;
-		/*position: absolute;*/
-		top: 38px;
-		width: 200px;
-		z-index: 10000;
-		padding: 5px;
-		background: #f8f8f8;
-		border: solid 1px #999;
-		display: none;
-		text-align: left;
-	}
-}
-
 
 .fullNavbarContainer{
 	width:70%;
@@ -122,18 +38,14 @@ p{
 	margin: 0 auto;
 }
 
-
 .navBar{
 	background-color: rgba(1,1,1,.2);
-	/*padding-top: 1%;*/
-
 	border-bottom:solid;
 	border-color: rgba(1,1,1,.5);
-
 }
 
 .navbarText{
-	font-size: 22px;
+	font-size:22px;
 	color: black;
 	padding-left:1%;
 }
@@ -143,69 +55,54 @@ p{
 }
 
 .navigationButtons{
-	/*float: left;*/
-	font-size: 25px;
+	font-size:25px;
 	color: black;
 	margin: 0 auto;
 	padding-right:3%;
 	text-align: center;
-
-}
-@media screen and (min-width: 714px) {
-	#menuIcon{
-		display: none;
-	}
-	#mobileButtons{
-		display: none;
-	}
-}
-@media screen and (max-width: 714px) {
-	#topButtons{
-		display:none;
-	}
-	#bottomButtons{
-		display:none;
-
-	}
-	.navigationButtons{
-	/*float: left;*/
-	font-size: 25px;
-	color: black;
-	margin: 0 auto;
-	padding-right:3%;
-	text-align: center;
-	}
-	#menuIcon{
-		display: block;
-	}
-
 }
 
 .centerSiteMap{
 	text-align: center;
 }
 
-	/*
-@media screen and (max-width: 1271px) {
-	.navigationButtons{
-		font-size: 25px;
-		color: black;
-		margin: 0 auto;
-		padding-right:3%;
+.profBoxes{
+	background-color: rgba(1,1,1,.2);
+	margin-bottom:1%;
+	display:block;
+	border-radius:3px;
+	overflow: none;
+  	border-width:1%;
 
-		width:800px;
-	}
-}*/
+  	padding:2%; 
+  	height:180px;
+
+  	border:solid;
+  	border-color: rgba(1,1,1,.5);
+}
+
+.container{
+	margin-top:2%;
+	margin-bottom:2%;
+	overflow:auto;
+	display: block;
+}
+/*^^^^^^^^^^^^^^^^ constant ^^^^^^^^^^^^^^^^*/
+
+
+
+
+
+/*vvvvvvvvvvvvvvv Unique to TSuro Page vvvvvvvvvvvvvvvvv*/
 #tsuroLink{
 	text-align: center;
 }
+/*^^^^^^^^^^^^^^^ Unique to TSuro Page ^^^^^^^^^^^^^^^^^*/
 
-#marginContainer{
-	margin-top:2%;
-}
 
+/*vvvvvvvvvvvvvvv Unique to Team Page vvvvvvvvvvvvvvvvv*/
 #teamImage{
-	width: 300px;
+	width:300px;
 }
 
 #teamImageContainer{
@@ -213,20 +110,28 @@ p{
   	border-color: rgba(1,1,1,.5);
 	background-color: rgba(1,1,1,.2);
 	padding:1%;
-    border-radius: 3px;
+    border-radius:3px;
     margin-top:4%;
-    width: 330px;
+    width:330px;
     margin:0 auto;
 }
 
+#TeamProfile{
+	width:45%;
+	float: left;
+}
+/*^^^^^^^^^^^^^^^ Unique to Team Page ^^^^^^^^^^^^^^^^^*/
+
+
+/*vvvvvvvvvvvvvvv Unique to Bussiness Page vvvvvvvvvvvvvvvvv*/
 .kiteDirectionsContainer{
 	border:solid;
   	border-color: rgba(1,1,1,.5);
 	background-color: rgba(1,1,1,.2);
 	padding:1%;
-    border-radius: 3px;
+    border-radius:3px;
     margin-top:2%;
-    width: 200px;
+    width:200px;
     margin:0 auto;
 }
 
@@ -237,223 +142,34 @@ p{
 }
 
 #kiteImage{
-	margin-top: 2%;
+	margin-top:2%;
 	background-color: rgba(1,1,1,.2);
 	border:solid;
 	border-color: rgba(1,1,1,.5);
-	width: 200px;
+	width:200px;
 }
 #kiteLogoContainer{
 	text-align: center;
 }
-
-.miniHeaders{
-	text-align: center;
-}
-
-.businessScreenshots{
-	width:250px;
-	text-align: center;
-}
-
-@media screen and (max-width: 816px) {
-	#sideBarProfpic {
-	  max-width: 300px;
-	  display: block;
-	  float:none;
-	  margin: 0 auto;
-
-	  /*border:solid;
-	  border-color: rgba(1,1,1,.5);*/
-	  /*border-radius: 50%;*/
-	  /*border:solid;
-	  border-color: #000000;
-	  border-width: 1%;
-	  float: left;*/
-	}
-	.navbarText{
-		text-align: center;
-	}
-	.navbarContentContainer{
-		text-align: center;
-	}
-}
-
-.nameHeader{
-	color:black
-}
-
-.naviagtionStyle{
-	color: black;
-}
-
-.navbarContainer{
-	background-color: rgba(1,1,1,.2);
-}
-
-/*.profBoxes{
-    /*background-color: #DDD8C4;
-    background-color: #787878;
-    margin-bottom: 1%;
-    display:block;
-    /*padding:1%;
-    border-radius: 25px;
-
-    border:solid;
-    border-color: #000000;
-    border-width: 1%;
-    padding:1%;
-}*/
-
-.profBoxes{
-	/*background-color: #DDD8C4;*/
-	background-color: rgba(1,1,1,.2);
-	margin-bottom: 1%;
-	display:block;
-	/*padding:1%;*/
-	border-radius: 3px;
-	overflow: none;
-  	border-width: 1%;
-
-  	padding:2%; 
-  	height:180px;
-
-  	border:solid;
-  	border-color: rgba(1,1,1,.5);
-}
-
-#TeamProfile{
-	width:45%;
-	float: left;
-}
-
 #KiteTeamProfile{
 	width:54%;
 	float: right;
 }
-
-#EcommerceProfile{
-	width:54%;
-	float: left;
+.businessScreenshots{
+	width:250px;
+	text-align: center;
 }
-
-#JSfiddleCloneProfile{
-	width:45%;
-	float: right;
-}
-@media screen and (max-width: 995px) {
-	.profBoxes{
-		height:auto;
-	}
-
-	#TeamProfile{
-		width:100%;
-		float: left;
-	}
-
-	#KiteTeamProfile{
-		width:100%;
-		float: right;
-	}
-
-	#EcommerceProfile{
-		width:100%;
-		float: left;
-	}
-
-	#JSfiddleCloneProfile{
-		width:100%;
-		float: right;
-	}
-
-	.profileHeaders{
-		text-align: center;
-	}
-}
-
-.pageContent{
-}
+/*^^^^^^^^^^^^^^^ Unique to Bussiness Page ^^^^^^^^^^^^^^^^^*/
 
 
-.containerWithFooter{
-	position:relative;
-}
 
-.footerText{
-	margin-bottom: 1%;
-	display:block;
-	/*padding:1%;*/
-	border-radius: 3px;
-	overflow: none;
-  	border-width: 1%;
-}
-
-#name{
-	
-}
-
-#number{
-	display:block;
-	float:left;
-}
-
-#email{
-	display:block;
-	float:left;
-	margin-right:15%;
-	margin-left:15%;
-}
-
-#linkedin{
-	display: block;
-	float:left;
-}
-
-.footerBorder{
-	width:500px;
-	margin: 0 auto;
-}
-
-.container{
-	margin-top: 2%;
-	margin-bottom: 2%;
-	overflow:auto;
-	display: block;
-}
-/*
+/*vvvvvvvvvvvvvvv Unique to Wordpress Page vvvvvvvvvvvvvvvvv*/
 .wordpressLogoAndButtonsContainer{
 	border:solid;
   	border-color: rgba(1,1,1,.5);
 	background-color: rgba(1,1,1,.2);
 	padding:1%;
-    border-radius: 3px;
-    float:right;
-    width:49%;
-    height:220px;
-
-}
-
-.spaceingDiv{
-	margin-bottom: 2%;
-}
-
-.headerAndParagraphContainer{
-	border:solid;
-  	border-color: rgba(1,1,1,.5);
-	background-color: rgba(1,1,1,.2);
-	padding:1%;
-    border-radius: 3px;
-    float:left;
-    width:49%;
-    height:220px;
-}*/
-
-.wordpressLogoAndButtonsContainer{
-	border:solid;
-  	border-color: rgba(1,1,1,.5);
-	background-color: rgba(1,1,1,.2);
-	padding:1%;
-    border-radius: 3px;
+    border-radius:3px;
     margin-top:2%;
 }
 
@@ -463,7 +179,7 @@ p{
 	background-color: rgba(1,1,1,.2);
 	padding:1%;
 	padding-bottom:2%;
-    border-radius: 3px;
+    border-radius:3px;
     margin:0 auto;
     width:60%;
 }
@@ -487,7 +203,7 @@ p{
 }
 
 .wordpressPagePicker{
-	font-size: 20px;
+	font-size:20px;
 	text-align: center; 
 }
 
@@ -509,9 +225,9 @@ p{
     /*padding-top:1%;
     padding-bottom: 1%;
     margin-bottom: 3%;*/
-    margin-top: 2%;
+    margin-top:2%;
     /*border-radius: 25px;*/
-    border-radius: 3px;
+    border-radius:3px;
     float:left;
 }
 
@@ -524,77 +240,459 @@ p{
 	overflow-y: scroll;
 	height:350px;
 }
-@media screen and (min-width: 993px) {
-	.wordpressDesktopContainer{
-		float:left;
-		width:49%;
-	}
 
-	.wordpressMobileContainer{
-		float:right;
-		width:49%;
-	}
-}
 
 .wordpressDesktopLabel{
 	text-align: center;
-	font-size: 25px;
+	font-size:25px;
 }
 
 .wordpressMobileLabel{
 	text-align: center;
-	font-size: 25px;
+	font-size:25px;
 }
 
 .wordpressHeaderImage{
-    max-width: 48.5%;
+    max-width:48.5%;
     display:block;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
 }
 
+	/*vvvvvvvvvvvvvvvvvv Desktop View vvvvvvvvvvvvvvvvvv*/
+	@media screen and (min-width:993px) {
+		.wordpressDesktopContainer{
+			float:left;
+			width:49%;
+		}
 
-@media screen and (max-width: 993px) {
-	.wordpressDesktopContainer{
-		display: block;
-		margin:0 auto;
-		width:80%;
+		.wordpressMobileContainer{
+			float:right;
+			width:49%;
+		}
 	}
+	/*^^^^^^^^^^^^^^^^^^^ Desktop View ^^^^^^^^^^^^^^^^*/
 
-	.wordpressMobileContainer{
-		display: block;
-		margin:0 auto;
-		width:80%;
-	}
+	/*vvvvvvvvvvvvvvvvvv Mobile View vvvvvvvvvvvvvvvvvv*/
+	@media screen and (max-width:993px) {
+		.wordpressDesktopContainer{
+			display: block;
+			margin:0 auto;
+			width:80%;
+		}
 
-	.wordpressFullScrollBox{
-		overflow-y: scroll;
-		height:400px;
-		margin-bottom: 2%;
-	}
+		.wordpressMobileContainer{
+			display: block;
+			margin:0 auto;
+			width:80%;
+		}
 
-	.wordpressMobileScrollBox{
-		overflow-y: scroll;
-		height:400px;
-		margin-bottom: 1%;
+		.wordpressFullScrollBox{
+			overflow-y: scroll;
+			height:400px;
+			margin-bottom:2%;
+		}
+
+		.wordpressMobileScrollBox{
+			overflow-y: scroll;
+			height:400px;
+			margin-bottom:1%;
+		}
 	}
+	/*^^^^^^^^^^^^^^^^^^^ Mobile View ^^^^^^^^^^^^^^^^*/
+
+
+/*^^^^^^^^^^^^^^^ Unique to Wordpress Page ^^^^^^^^^^^^^^^^^*/
+
+
+
+#marginContainer{
+	margin-top:2%;
+}
+
+.miniHeaders{
+	text-align: center;
+}
+
+
+.nameHeader{
+	color:black
+}
+
+.naviagtionStyle{
+	color: black;
+}
+
+.navbarContainer{
+	background-color: rgba(1,1,1,.2);
+}
+
+#EcommerceProfile{
+	width:54%;
+	float: left;
+}
+
+#JSfiddleCloneProfile{
+	width:45%;
+	float: right;
 }
 
 
 
 
 
+/*^^^^^^^^^^^^^^^^^^^ Footer ^^^^^^^^^^^^^^^^*/
 footer{
 	text-align: center;
 	background-color: rgba(1,1,1,.2);
 	/*position:fixed;bottom:0;*/
 	bottom:0;
-	width:100%;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
+	padding-top:10px;
+	padding-bottom:10px;
 	overflow:hidden;
 
 	border-top:solid;
 	border-color: rgba(1,1,1,.5);
 }
+#name{
+	/*margin-bottom: 16%;
+	margin-bottom: 19%;*/
+	/*margin-bottom:2%;*/
+	margin-bottom:5px;
+}
+
+#number{
+}
+
+#email{
+}
+
+#linkedInButton{
+
+}
+
+#resumePdf{
+}
+
+#resumeWord{
+}
+
+.footerBorder{
+	width:80%;
+	margin:0 auto;
+}
+
+.containerWithFooter{
+	position:relative;
+}
+
+
+
+#linkedInContainer{
+
+}
+
+#contactContainer{
+	/*padding-top:4%;*/
+	padding-top:20px;
+}
+.pdf{
+	background-color: blue;
+	z-index:1000;
+}
+
+/*
+#linkedInContainer{
+	width: 33.33%;
+	float:left;
+	text-align: center;
+	position: relative;
+	/*padding-top: 7%;*/
+/*}
+
+#resumeContainer{
+	width: 33.33%;
+	float:left;
+	text-align: center;
+	margin-top: 3%;
+}
+
+#contactContainer{
+	width: 33.33%;
+	float:left;
+	text-align: center;
+	margin-top: 3%;
+}
+*/
+.footerText{
+	margin-bottom:1%;
+	display:block;
+	/*padding:1%;*/
+	border-radius:3px;
+	overflow: none;
+  	border-width:1%;
+}
+
+#resumeContainer{
+	text-align: center;
+	padding: 10px;
+}
+
+#resumeImage{
+	width: 100%;
+	/*margin: 0 auto;*/
+	text-align: center;
+	background-color: red;
+}
+
+#resumeImageContainer{
+	padding: 5px;
+	background-color: rgba(1,1,1,.2);
+	border:solid;
+	border-width: 1%;
+	border-color: rgba(1,1,1,0);
+}
+
+@media screen and (min-width:768px){
+	#name{
+		/*margin-bottom: 16%;
+
+		margin-bottom:19%;*/
+		margin-bottom:25px;
+	}
+	#resumeContainer{
+	/*padding-top:4%;*/
+		padding-top:15px;
+
+	}
+
+	#contactContainer{
+		/*padding-top:4%;*/
+		padding-top:15px;
+	}
+	/*#mobileLinkedInContainer{
+		position: absolute !important;
+	   	top: -9999px !important;
+	   	left: -9999px !important;
+	}*/
+}
+
+/*@media screen and (max-width: 520px){
+	#mobileLinkedInContainer{
+		position: relative;
+		/*width: 100%;*/
+/*	}
+
+	#linkedInContainer{
+		position: absolute !important;
+	   	top: -9999px !important;
+	   	left: -9999px !important;
+	}
+
+	#resumeContainer{
+		width: auto;
+		float: none;
+	}
+
+	#contactContainer{
+		width: auto;
+		float: none;
+	}
+}*/
+/*vvvvvvvvvvvvvvvvvv Footer vvvvvvvvvvvvvvvvvv*/
+
+
+
+/*vvvvvvvvvvvvvvvvvvv Mobile View vvvvvvvvvvvvvvvvvvv*/
+
+@media screen and (max-width:813px){
+	#menuIcon{
+		/*color:#000;*/
+		width:80px;
+		height:30px;
+		background: #ecebeb;
+		padding:4px 5px 5px 5px;
+		cursor: pointer;
+		border:solid 1px #666;
+		/*border-radius: 4px;*/
+		display:block;
+		text-align: center;
+		top:0;
+		left:0;
+		position: fixed;
+		z-index: 1000;
+	}
+	#menuText{
+		text-align: center;
+	}
+	/*#navigationButtons{
+		clear:both;
+		position: relative;
+		width: 160px;
+		z-index: 10000;
+		padding: 5px;
+		background: #f8f8f8;
+		border: solid 1px #999;
+		display: none;
+		float: left;
+		/*top:430px;
+	}*/
+	.navigationButtons{
+		z-index:1000;
+		font-size:25px;
+		color: black;
+		overflow: visible;
+		/*margin: 0 auto;*/
+		padding-right:3%;
+		/*text-align: center;*/
+		float: left;
+		/*z-index: 1;
+		position: absolute;
+		/*top:430px;*/
+	}
+
+	#mobileButtons{
+		clear:both;
+		position: fixed;
+		/*top: 38px;*/
+		width:200px;
+		z-index:10000;
+		padding:5px;
+		/*background: #f8f8f8;*/
+		border:solid 1px #999;
+		display: none;
+		text-align: left;
+		background: #ecebeb;
+		top:29px;
+		left:0;
+	}
+	#menuFullContainer{
+		/*position: absolute;*/
+	}
+}
+
+	
+	@media screen and (max-width:813px) {
+		/*vvvvvvvvvvvvvvv change width of navbar vvvvvvvvvvvvvvvvv*/
+		.navbarContentContainer{
+			width:80%;
+			vertical-align: top;
+			margin:0 auto;
+			overflow: hidden;
+		}
+		/*^^^^^^^^^^^^^^^^ change width of navbar ^^^^^^^^^^^^^^^^*/
+
+
+		/*vvvvvvvvvvvvvvv hide desktop pic vvvvvvvvvvvvvvvvv*/
+		.navPicDesktop{
+		    position: absolute !important;
+	   	    top: -9999px !important;
+	   		left: -9999px !important;
+		}
+		/*^^^^^^^^^^^^^^^^ hide desktop pic ^^^^^^^^^^^^^^^^*/
+	}
+	
+
+	/*vvvvvvvvvvvvvvv hide desktop nav buttons vvvvvvvvvvvvvvvvv*/
+	@media screen and (max-width:813px) {
+		#topButtons{
+			 position: absolute !important;
+	   	    top: -9999px !important;
+	   		left: -9999px !important;
+		}
+		#bottomButtons{
+			 position: absolute !important;
+	   	    top: -9999px !important;
+	   		left: -9999px !important;
+		}
+
+
+	}
+	/*^^^^^^^^^^^^^^^^ hide desktop nav buttons ^^^^^^^^^^^^^^^^*/
+
+@media screen and (max-width:813px) {
+	#navBarProfpic {
+	  max-width:300px;
+	  display: block;
+	  float:none;
+	  margin: 0 auto;
+	}
+	.navbarText{
+		text-align: center;
+	}
+	.navbarContentContainer{
+		text-align: center;
+	}
+}
+
+	/*vvvvvvvvvvvvvvvvvvvv Stack Profile Boxes vvvvvvvvvvvvvvvvvvvv*/
+	@media screen and (max-width:995px) {
+		.profBoxes{
+			height:auto;
+		}
+
+		#TeamProfile{
+			width:100%;
+			float: left;
+		}
+
+		#KiteTeamProfile{
+			width:100%;
+			float: right;
+		}
+
+		#EcommerceProfile{
+			width:100%;
+			float: left;
+		}
+
+		#JSfiddleCloneProfile{
+			width:100%;
+			float: right;
+		}
+
+		.profileHeaders{
+			text-align: center;
+		}
+	}
+	/*^^^^^^^^^^^^^^^^^^^ Stack Profile Boxes ^^^^^^^^^^^^^^^^^^^*/
+
+/*^^^^^^^^^^^^^^^^^^^ Mobile View ^^^^^^^^^^^^^^^^^^^*/
+
+
+
+
+
+
+/*vvvvvvvvvvvvvvvvvvv Desktop View vvvvvvvvvvvvvvvvvvv*/
+
+	/*vvvvvvvvvvvvvvv hide mobile pic vvvvvvvvvvvvvvvvv*/
+	@media screen and (min-width:814px) {
+		.navPicMobile{
+			position: absolute !important;
+	   	    top: -9999px !important;
+	   		left: -9999px !important;
+		}
+	}
+	/*^^^^^^^^^^^^^^^^ hide mobile pic ^^^^^^^^^^^^^^^^*/
+
+	/*vvvvvvvvvvvvvvv hide mobile menu and buttons vvvvvvvvvvvvvvvvv*/
+	@media screen and (min-width:814px) {
+		#menuIcon{
+			position: absolute !important;
+	   	    top: -9999px !important;
+	   		left: -9999px !important;
+		}
+		#mobileButtons{
+			position: absolute !important;
+	   	    top: -9999px !important;
+	   		left: -9999px !important;
+		}
+	}
+	/*^^^^^^^^^^^^^^^^ hide mobile menu and buttons ^^^^^^^^^^^^^^^^*/
+
+
+/*^^^^^^^^^^^^^^^^^^^ Desktop View ^^^^^^^^^^^^^^^^^^^*/
 
