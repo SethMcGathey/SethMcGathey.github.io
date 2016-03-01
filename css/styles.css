@@ -295,6 +295,9 @@ p{
 			height:400px;
 			margin-bottom:1%;
 		}
+		.headerAndParagraphContainer{
+		    width:100%;
+		}
 	}
 	/*^^^^^^^^^^^^^^^^^^^ Mobile View ^^^^^^^^^^^^^^^^*/
 
