@@ -12,15 +12,15 @@
     <link rel="icon" href="img/SMFavicon.png" type="image/gif" >-->
   </head>
 
- <div class="navBar">
+<div class="navBar">
           <div class="navbarContentContainer">
               <div id="menuFullContainer">
                 <div id="menuIcon"><p id='menuText'>Menu<p></div>
                 <ul class="navigationButtons" id="mobileButtons">
                   <a class="naviagtionStyle" href="index.html">Home</a><br>
-                  <a class="naviagtionStyle" href="jsFiddleClone.html">JSFiddle Clone</a><br>
+                  <a class="naviagtionStyle" href="codingPlayground.html">Coding Playground</a><br>
                   <a class="naviagtionStyle" href="wordpressPage.html">Wordpress Site</a><br> 
-                  <a class="naviagtionStyle" href="TSuroClone.html">TSuro Clone</a><br> 
+                  <a class="naviagtionStyle" href="browserGame.html">Browser Game</a><br> 
                   <a class="naviagtionStyle" href="resume.html">Resume</a><br>
                   <a class="naviagtionStyle" href="siteIndex.html">Site Index</a>
                 </ul>
@@ -33,8 +33,8 @@
           <div id="navbarButtonsContainerId" class="navbarButtonsContainer">
             <ul class="navigationButtons" id="topButtons">
               <a class="naviagtionStyle" href="index.html">Home</a> |  
-              <a class="naviagtionStyle" href="jsFiddleClone.html">JSFiddle Clone</a> |
-              <a class="naviagtionStyle" href="TSuroClone.html">TSuro Clone</a> |
+              <a class="naviagtionStyle" href="codingPlayground.html">Coding Playground</a> |
+              <a class="naviagtionStyle" href="browserGame.html">Browser Game</a> |
               <a class="naviagtionStyle" href="wordpressPage.html">Wordpress Site</a>    
             </ul>
             <ul class="navigationButtons" id="bottomButtons">
@@ -43,42 +43,50 @@
             </ul>
           </div>
       </div>
+
 <body>
 <div class="containerWithFooter">
   <div class="container">
       <div class="pageContent">
-      <!--
-        <div class="spaceingDiv">
-        
-          <div class="headerAndParagraphContainer">
-                <h2 class="wordpressPageHeader">Wordpress Project</h2>
-
-                <p class="wordpressParagraph">The wordpress site was a project completed by Becky Gahart, Scott Parker, Matt Cordier, and myself. We each took on a different role. My main roles were managing the SEO and creating the contact page. I created the contact page from scratch with PHP and added validation. This site is no longer live but I have provided screenshots of the full and mobile layouts below.</p>
-          </div> headerAndParagraphContainer
-        </div>
-        <div class="wordpressLogoAndButtonsContainer">
-              <img class="centerText wordpressHeaderImage" src='img/CCC_logo.png' alt='Kite logo.' />
-
-
-              <p class="wordpressTitle">Choose a Wordpress Page to Scroll Through</p>
-              <p class="wordpressPagePicker">
-                <a id="wordpressHomeButton">Home Page</a> | <a id="wordpressContactPageButton">Contact Page</a> | <a id="wordpressProductPageButton">Product Page</a> | <a id="wordpressMeetTheTeamPageButton">Meet the Team Page</a>
-              </p>
-        </div>-->
 
           <div class="headerAndParagraphContainer">
 
-            <h2 class="wordpressPageHeader">TSuro Clone</h2>
+            <h2 class="wordpressPageHeader">Coding Playground</h2>
 
+            <p class="wordpressParagraph">This project is a clone of the popular browser coding playground, jsFiddle. This project gave Seth experience with ajax and json which he did not have much experience with before. Seth tried multiple highlighting APIs but settled on ACE because of its astetically pleasing highlighting layouts and its easy to follow documentation. Similar to the way jsFiddle does it, Seth implemeted a repository like system to allow users to bookmark their url so that they can access it again later or make changes and then return to a past version.  
+            </p>
 
-
-            <p class="wordpressParagraph">This game was a project completed by Seth McGathey, Becky Gahart, and Matt Cordier. Although roles were not implicetly defined, each person settled into roles that seemed natural. Matt handled most of the graphics and visual layout of the game, Becky handled the Node.js comnnections between the user screens and console screen, and Seth handled the overall game logic.</p>
-            <p id="tsuroLink"><a href="http://45.55.63.94:8080/" target="_blank">Link to Tsuro Site </a></p>
-            <p id="tsuroLink">(This link will only work if Seth run it in the server. If you would like to see the live version please contact Seth at seth.mcgathey@gmail.com and he will setup a time to run it for you.)</p>
             <!--<img class="centerText wordpressHeaderImage" src='img/CCC_logo.png' alt='Kite logo.' />-->
           </div>
+          <div id="kiteLogoContainer"><a href="http://ec2-52-34-213-191.us-west-2.compute.amazonaws.com/jfiddle/codingPage.php" target="_blank">Link to jsFiddle Page</a></div>
 
-              
+
+
+<!--
+          <div id="kiteLogoContainer"><a href="projects/kiteProject/index.html" target="_blank"><img id="kiteImage" src='img/kite.png' alt='Kite logo.' /></a></div>
+
+            <div class="wordpressImageContainer" id="wordpressHomePage">
+              <div class="row scrollBoxContainer">
+                <div class="col-lg-3 businessScrollBox">
+                  <h4 class="miniHeaders">Home Page</h4>
+                  <img class="businessScreenshots" src='img/homePage2.png' alt='Home page of website.'/>
+                </div><!--col-->
+                <!--<div class="col-lg-3 businessScrollBox">
+                  <h4 class="miniHeaders">Seth's Profile</h4>
+                  <img class="businessScreenshots" src='img/sethProfile.png' alt='Seths profile page of website.'/>
+                </div><!--col-->
+                <!--<div class="col-lg-3 businessScrollBox">
+                  <h4 class="miniHeaders">Scott's Profile</h4>
+                  <img class="businessScreenshots" src='img/scottProfile.png' alt='Scotts profile page of website.'/>
+                </div><!--col-->
+                <!--<div class="col-lg-3 businessScrollBox">
+                  <h4 class="miniHeaders">Product Page</h4>
+                  <img class="businessScreenshots" src='img/portfolio.png' alt='Portfolio page of website.'/>
+                </div><!--col-->
+              <!--</div><!--row-->
+            <!--</div>
+
+              </div><!--wordpressImageContainer-->
             </div><!--pageContent-->
 
 
@@ -105,7 +113,8 @@
   </footer>
   </div>
   <!--JS file-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/javascript.js"></script>
 

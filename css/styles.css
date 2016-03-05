@@ -228,11 +228,13 @@ p{
 .wordpressFullScrollBox{
 	overflow-y: scroll;
 	height:350px;
+	background-color: yellow;
 }
 
 .wordpressMobileScrollBox{
 	overflow-y: scroll;
 	height:350px;
+	background-color: blue;
 }
 
 
@@ -286,13 +288,13 @@ p{
 
 		.wordpressFullScrollBox{
 			overflow-y: scroll;
-			height:400px;
-			/*margin-bottom:2%;*/
+			height:200px;
+			margin-bottom:25px;
 		}
 
 		.wordpressMobileScrollBox{
 			overflow-y: scroll;
-			height:400px;
+			height:350px;
 			margin-bottom:1%;
 		}
 		.headerAndParagraphContainer{
@@ -699,3 +701,144 @@ footer{
 
 /*^^^^^^^^^^^^^^^^^^^ Desktop View ^^^^^^^^^^^^^^^^^^^*/
 
+
+
+/*vvvvvvvvvvvvvvv Board Game vvvvvvvvvvvvvvvvv*/
+.browserGameLogoAndButtonsContainer{
+	border:solid;
+  	border-color: rgba(1,1,1,.5);
+	background-color: rgba(1,1,1,.2);
+	padding:1%;
+    border-radius:3px;
+    margin-top:2%;
+}
+
+.headerAndParagraphContainer{
+	border:solid;
+  	border-color: rgba(1,1,1,.5);
+	background-color: rgba(1,1,1,.2);
+	padding:1%;
+	padding-bottom:2%;
+    border-radius:3px;
+    margin:0 auto;
+    width:60%;
+}
+
+
+
+.browserGameParagraph{
+	text-align: center;
+}
+
+.browserGamePageHeader{
+	text-align: center;
+}
+
+.browserGameTitle{
+	text-align: center;
+}
+
+.browserGameScreenShots{
+	width:500px;
+}
+
+.browserGamePagePicker{
+	font-size:20px;
+	text-align: center; 
+}
+
+.browserGameImageFullSize{
+	width:100%;
+}
+
+.browserGameImageMobileSize{
+	width:100%;
+}
+
+.browserGameImageContainer{
+	border:solid;
+  	border-color: rgba(1,1,1,.5);
+	background-color: rgba(1,1,1,.2);
+	padding:2%;
+    margin-top:2%;
+    border-radius:3px;
+    float:left;
+    width:100%;
+}
+
+.browserGameFullScrollBox{
+	overflow-y: scroll;
+	/*height:350px;*/
+}
+
+.browserGameMobileScrollBox{
+	overflow-y: scroll;
+}
+
+
+.browserGameDesktopLabel{
+	text-align: center;
+	font-size:25px;
+}
+
+.browserGameMobileLabel{
+	text-align: center;
+	font-size:25px;
+}
+
+.browserGameHeaderImage{
+    max-width:48.5%;
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+	/*vvvvvvvvvvvvvvvvvv Desktop View vvvvvvvvvvvvvvvvvv*/
+	@media screen and (min-width:993px) {
+		.browserGameDesktopContainer{
+			float:left;
+			width:49%;
+		}
+
+		.browserGameMobileContainer{
+			float:right;
+			width:49%;
+		}
+	}
+	/*^^^^^^^^^^^^^^^^^^^ Desktop View ^^^^^^^^^^^^^^^^*/
+
+	/*vvvvvvvvvvvvvvvvvv Mobile View vvvvvvvvvvvvvvvvvv*/
+	@media screen and (max-width:993px) {
+		.browserGameDesktopContainer{
+			display: block;
+			margin:0 auto;
+			width:80%;
+			/*height:400px;
+			background-color: yellow;*/
+		}
+
+		.browserGameMobileContainer{
+			display: block;
+			margin:0 auto;
+			width:80%;
+		}
+
+		.browserGameFullScrollBox{
+			overflow-y: scroll;
+			/*height:24%;
+			height:266px;*/
+			margin-bottom:25px;
+		}
+
+		.browserGameMobileScrollBox{
+			overflow-y: scroll;
+			/*height:350px;*/
+			margin-bottom:1%;
+		}
+		.headerAndParagraphContainer{
+		    width:100%;
+		}
+	}
+	/*^^^^^^^^^^^^^^^^^^^ Mobile View ^^^^^^^^^^^^^^^^*/
+/*^^^^^^^^^^^^^^^^^^^ Board Game ^^^^^^^^^^^^^^^^^^^*/

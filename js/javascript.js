@@ -212,19 +212,14 @@ $('#wordpressMeetTheTeamPageButton').click( function() {
   $( "#wordpressTeamPage" ).show();
 } );
 
+//********** toggle menu *************
+$("#menuIcon").click(function(e){
+  $("#mobileButtons").slideToggle();
+  e.stopPropagation(); 
+});
 
-$(document).ready(function(){
-
-  /* prepend menu icon */
-  //$('#navbarButtonsContainerId').prepend('<div id="menu-icon">Menu</div>');
-  
-  /* toggle nav */
-  $("#menuIcon").on("click", function(){
-    $("#mobileButtons").slideToggle();
-    $(this).toggleClass("active");
-    //$("#bottomButtons").slideToggle();
-  });
-
+$(document).click(function(){                   
+  $("#mobileButtons").slideUp();
 });
 
 
