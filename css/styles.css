@@ -41,6 +41,10 @@ p{
 	background-color: rgba(1,1,1,.2);
 	border-bottom:solid;
 	border-color: rgba(1,1,1,.5);
+	-moz-box-shadow: 2px 2px 2px #888888;
+	-webkit-box-shadow: 2px 2px 2px #888888;
+	box-shadow: 2px 2px 2px #888888;
+	z-index:1;
 }
 
 .navbarText{
@@ -170,6 +174,10 @@ p{
 	padding:1%;
     border-radius:3px;
     margin-top:2%;
+   	-moz-box-shadow: 2px 2px 2px #888888;
+	-webkit-box-shadow: 2px 2px 2px #888888;
+	box-shadow: 2px 2px 2px #888888;
+	z-index:1;
 }
 
 .headerAndParagraphContainer{
@@ -219,16 +227,28 @@ p{
     margin-top:2%;
     border-radius:3px;
     float:left;
+    -moz-box-shadow: 2px 2px 2px #888888;
+	-webkit-box-shadow: 2px 2px 2px #888888;
+	box-shadow: 2px 2px 2px #888888;
+	z-index:1;
 }
 
 .wordpressFullScrollBox{
 	overflow-y: scroll;
 	max-height:320px;
+	-moz-box-shadow: 2px 2px 2px #888888;
+	-webkit-box-shadow: 2px 2px 2px #888888;
+	box-shadow: 2px 2px 2px #888888;
+	z-index:1;
 }
 
 .wordpressMobileScrollBox{
 	overflow-y: scroll;
 	max-height:320px;
+	-moz-box-shadow: 2px 2px 2px #888888;
+	-webkit-box-shadow: 2px 2px 2px #888888;
+	box-shadow: 2px 2px 2px #888888;
+	z-index:1;
 }
 
 
@@ -371,6 +391,10 @@ footer{
 
 	border-top:solid;
 	border-color: rgba(1,1,1,.5);
+	-moz-box-shadow: 2px -2px 2px #888888;
+	-webkit-box-shadow: 2px -2px 2px #888888;
+	box-shadow: 2px -2px 2px #888888;
+	z-index:1;
 }
 #name{
 }
@@ -434,14 +458,25 @@ footer{
 #resumeImage{
 	width: 100%;
 	text-align: center;
+	border-radius: 3px;
+	-moz-box-shadow: 2px 2px 2px #888888;
+	-webkit-box-shadow: 2px 2px 2px #888888;
+	box-shadow: 2px 2px 2px #888888;
+	z-index:1;
 }
 
 #resumeImageContainer{
-	padding: 5px;
+	padding: 20px;
 	background-color: rgba(1,1,1,.2);
 	border:solid;
-	border-width: 1%;
-	border-color: rgba(1,1,1,0);
+	/*border-width: 2px;*/
+	border-radius: 5px;
+	border-color: rgba(1,1,1,.5);
+
+	-moz-box-shadow: 2px 2px 2px #888888;
+	-webkit-box-shadow: 2px 2px 2px #888888;
+	box-shadow: 2px 2px 2px #888888;
+	z-index:1;
 }
 
 @media screen and (min-width:768px){
@@ -574,6 +609,10 @@ footer{
 		.profBoxes{
 			height:auto;
 			float: none;
+			-moz-box-shadow: 2px 2px 2px #888888;
+			-webkit-box-shadow: 2px 2px 2px #888888;
+			box-shadow: 2px 2px 2px #888888;
+			z-index:1;
 			/*margin-right: 5%;
 			margin-left: 5%;*/
 		}
@@ -651,6 +690,10 @@ footer{
 			float: none;
 			/*margin-right: 5%;
 			margin-left: 5%;*/
+			-moz-box-shadow: 2px 2px 2px #888888;
+			-webkit-box-shadow: 2px 2px 2px #888888;
+			box-shadow: 2px 2px 2px #888888;
+			z-index:1;
 		}
 		#browserGameProfile{
 			width:100%;
@@ -698,6 +741,10 @@ footer{
     border-radius:3px;
     margin:0 auto;
     width:60%;
+   	-moz-box-shadow: 2px 2px 2px #888888;
+	-webkit-box-shadow: 2px 2px 2px #888888;
+	box-shadow: 2px 2px 2px #888888;
+	z-index:1;
 }
 
 
@@ -740,14 +787,26 @@ footer{
     border-radius:3px;
     float:left;
     width:100%;
+   	-moz-box-shadow: 2px 2px 2px #888888;
+	-webkit-box-shadow: 2px 2px 2px #888888;
+	box-shadow: 2px 2px 2px #888888;
+	z-index:1;
 }
 
 .browserGameFullScrollBox{
 	overflow-y: scroll;
+    -moz-box-shadow: 2px 2px 2px #888888;
+	-webkit-box-shadow: 2px 2px 2px #888888;
+	box-shadow: 2px 2px 2px #888888;
+	z-index:1;
 }
 
 .browserGameMobileScrollBox{
 	overflow-y: scroll;
+    -moz-box-shadow: 2px 2px 2px #888888;
+	-webkit-box-shadow: 2px 2px 2px #888888;
+	box-shadow: 2px 2px 2px #888888;
+	z-index:1;
 }
 
 
