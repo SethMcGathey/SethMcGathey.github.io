@@ -455,7 +455,17 @@ footer{
 	padding: 10px;
 }
 
-#resumeImage{
+#resumeImage1{
+	width: 100%;
+	text-align: center;
+	border-radius: 3px;
+	-moz-box-shadow: 2px 2px 2px #888888;
+	-webkit-box-shadow: 2px 2px 2px #888888;
+	box-shadow: 2px 2px 2px #888888;
+	z-index:1;
+	margin-bottom: 20px;
+}
+#resumeImage2{
 	width: 100%;
 	text-align: center;
 	border-radius: 3px;
