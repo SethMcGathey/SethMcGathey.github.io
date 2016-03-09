@@ -27,7 +27,7 @@ $.getJSON( "js/blogEntries.json", function(data) {
   unhideGroup(1);
 
 })
-*/
+
 function hidePrevButton()
 {
   $("#prev").hide();
@@ -72,7 +72,6 @@ function unhideGroup(number)
   {
     numOfEntries++;
     $(".group" + numOfEntries).hide();
-    //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
   })
 
   var groupNumber = showThisMany * number-2;
@@ -93,7 +92,6 @@ function unhideGroupPrev()
     {
       numOfEntries++;
       $(".group" + numOfEntries).hide();
-      //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
     })
 
     var groupNumber = showThisMany * number-2;
@@ -115,7 +113,6 @@ function unhideGroupNext()
     {
       numOfEntries++;
       $(".group" + numOfEntries).hide();
-      //$(".blogPosts").text(obj.entries[1].date + " " + obj.entries[1].title + " " + obj.entries[1].text);
     })
 
     var groupNumber = showThisMany * number-2;
@@ -132,8 +129,6 @@ function unhideGroupNext()
 function searchFunction()
 {
   var word = document.getElementById('t1').value
-  //RegExp(oldWord, "g")
-  //var str = "Mr Blue has a blue house and a blue car";
   var str = document.getElementById("everything").innerHTML; 
   var res = str.replace(RegExp(word, "gi"), "<mark>" + word + "</mark>");
   document.getElementById("everything").innerHTML = res;
@@ -172,7 +167,7 @@ function showPostsWhenWordFound(word)
 $("#TeamProfile").click(function() {
   $("#target")
 });
-
+*/
 
 
 
@@ -221,102 +216,3 @@ $("#menuIcon").click(function(e){
 $(document).click(function(){                   
   $("#mobileButtons").slideUp();
 });
-
-
-/*function findString (str) {
- if (parseInt(navigator.appVersion)<4) return;
- var strFound;
- if (window.find) {
-
-  // CODE FOR BROWSERS THAT SUPPORT window.find
-
-  strFound=self.find(str);
-  if (!strFound) {
-   strFound=self.find(str,0,1);
-   while (self.find(str,0,1)) continue;
-  }
- }
- else if (navigator.appName.indexOf("Microsoft")!=-1) {
-
-  // EXPLORER-SPECIFIC CODE
-
-  if (TRange!=null) {
-   TRange.collapse(false);
-   strFound=TRange.findText(str);
-   if (strFound) TRange.select();
-  }
-  if (TRange==null || strFound==0) {
-   TRange=self.document.body.createTextRange();
-   strFound=TRange.findText(str);
-   if (strFound) TRange.select();
-  }
- }
- else if (navigator.appName=="Opera") {
-  alert ("Opera browsers not supported, sorry...")
-  return;
- }
- if (!strFound) alert ("String '"+ str +"' not found!")
- return;
-}
-  /*.success(function() {
-    console.log( "second success" );
-  })
-  .error(function() {
-    console.log( "error" );
-  })
-  .complete(function() {
-    console.log( "complete" );
-  });*/
- 
-// Perform other work here ...
- 
-// Set another completion function for the request above
-/*obj.complete(function() {
-  console.log( "second complete" );
-});*/
-
-/*showPage = function(page) {
-    $(".pagination").hide();
-    $(".pagination").each(function(n) {
-        if (n >= pageSize * (page - 1) && n < pageSize * page)
-            $(this).show();
-    });        
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-          <nav id="nav-wrap"><!--<nav id="nav-wrap" class="navbarButtonsContainer">-->
-            <ul id-"nav"><!--<ul id-"nav" class="navigationButtons">-->
-                  <!--<li> <a class="naviagtionStyle" href="index.html">Home</a></li> |  
-                  <li> <a class="naviagtionStyle" href="TSuroClone.html">TSuro Clone</a></li> | 
-                  <li> <a class="naviagtionStyle" href="blog.html">Blog</a></li> |
-                  <li> <a class="naviagtionStyle" href="businessProject.html">Business Project</a></li> | 
-                  <li> <a class="naviagtionStyle" href="wordpressPage.html">Wordpress Project</a></li> | 
-                  <li> <a class="naviagtionStyle" href="teamProject.html">Team Project</a></li> | 
-                  <li> <a class="naviagtionStyle" href="siteIndex.html">Site Index</a></li>-->
-
-                  <li> <a href="index.html">Home</a></li> |  
-                  <li> <a href="TSuroClone.html">TSuro Clone</a></li> | 
-                  <li> <a href="blog.html">Blog</a></li> |
-                  <li> <a href="businessProject.html">Business Project</a></li> | 
-                  <li> <a href="wordpressPage.html">Wordpress Project</a></li> | 
-                  <li> <a href="teamProject.html">Team Project</a></li> | 
-                  <li> <a href="siteIndex.html">Site Index</a></li>
-            </ul>
-          </nav>
-
-          */
