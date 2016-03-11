@@ -166,6 +166,72 @@ p{
 
 
 
+/*vvvvvvvvvvvvvvv Unique to Code Fiddle Page vvvvvvvvvvvvvvvvv*/
+.codeFiddleImageFullSize{
+	width:100%;
+}
+
+.codeFiddleImageContainer{
+	border:solid;
+  	border-color: rgba(1,1,1,.5);
+	background-color: rgba(1,1,1,.2);
+	padding:2%;
+    margin-top:2%;
+    border-radius:3px;
+    float:left;
+    -moz-box-shadow: 2px 2px 2px #888888;
+	-webkit-box-shadow: 2px 2px 2px #888888;
+	box-shadow: 2px 2px 2px #888888;
+	z-index:1;
+}
+
+.codeFiddleFullScrollBox{
+	overflow-y: scroll;
+	-moz-box-shadow: 2px 2px 2px #888888;
+	-webkit-box-shadow: 2px 2px 2px #888888;
+	box-shadow: 2px 2px 2px #888888;
+	z-index:1;
+	border-radius: 5px;
+}
+
+
+.codeFiddleDesktopLabel{
+	text-align: center;
+	font-size:25px;
+}
+
+.codeFiddleMobileContainer{
+	float:right;
+	width:49%;
+}
+
+	/*vvvvvvvvvvvvvvvvvv Mobile View vvvvvvvvvvvvvvvvvv*/
+	@media screen and (max-width:993px) {
+		.codeFiddleDesktopContainer{
+			display: block;
+			margin:0 auto;
+			width:80%;
+		}
+
+		.codeFiddleFullScrollBox{
+			overflow-y: scroll;
+			max-height: 500px;
+			margin:1px;
+		}
+
+		.headerAndParagraphContainer{
+		    width:100%;
+		}
+	}
+	/*^^^^^^^^^^^^^^^^^^^ Mobile View ^^^^^^^^^^^^^^^^*/
+
+
+/*^^^^^^^^^^^^^^^ Unique to Code Fiddle Page ^^^^^^^^^^^^^^^^^*/
+
+
+
+
+
 /*vvvvvvvvvvvvvvv Unique to Wordpress Page vvvvvvvvvvvvvvvvv*/
 .wordpressLogoAndButtonsContainer{
 	border:solid;
@@ -344,8 +410,6 @@ p{
 
 /*^^^^^^^^^^^^^^^ Unique to Wordpress Page ^^^^^^^^^^^^^^^^^*/
 
-
-
 #marginContainer{
 	margin-top:2%;
 }
@@ -365,17 +429,6 @@ p{
 .navbarContainer{
 	background-color: rgba(1,1,1,.2);
 }
-/*
-#EcommerceProfile{
-	width:54%;
-	float: left;
-}
-
-#JSfiddleCloneProfile{
-	width:45%;
-	float: right;
-}
-*/
 
 
 
@@ -396,25 +449,6 @@ footer{
 	box-shadow: 2px -2px 2px #888888;
 	z-index:1;
 }
-#name{
-}
-#siteMap{
-}
-#number{
-}
-
-#email{
-}
-
-#linkedInButton{
-
-}
-
-#resumePdf{
-}
-
-#resumeWord{
-}
 
 .footerBorder{
 	width:80%;
@@ -423,12 +457,6 @@ footer{
 
 .containerWithFooter{
 	position:relative;
-}
-
-
-
-#linkedInContainer{
-
 }
 
 #contactContainer{
@@ -756,8 +784,6 @@ footer{
 	box-shadow: 2px 2px 2px #888888;
 	z-index:1;
 }
-
-
 
 .browserGameParagraph{
 	text-align: center;
