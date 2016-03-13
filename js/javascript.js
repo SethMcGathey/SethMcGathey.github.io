@@ -5,28 +5,28 @@ $( document ).ready( function() {
   $( "#wordpressTeamPage" ).hide();
 } );
 
-$('#wordpressHomeButton').click( function() { 
+$('.wordpressHomeButton').click( function() { 
   $( "#wordpressHomePage" ).show(); 
   $( "#wordpressContactPage" ).hide();
   $( "#wordpressProductPage" ).hide();
   $( "#wordpressTeamPage" ).hide();
 } );
 
-$('#wordpressContactPageButton').click( function() { 
+$('.wordpressContactPageButton').click( function() { 
   $( "#wordpressHomePage" ).hide(); 
   $( "#wordpressContactPage" ).show();
   $( "#wordpressProductPage" ).hide();
   $( "#wordpressTeamPage" ).hide();
 } );
 
-$('#wordpressProductPageButton').click( function() { 
+$('.wordpressProductPageButton').click( function() { 
   $( "#wordpressHomePage" ).hide(); 
   $( "#wordpressContactPage" ).hide();
   $( "#wordpressProductPage" ).show();
   $( "#wordpressTeamPage" ).hide();
 } );
 
-$('#wordpressMeetTheTeamPageButton').click( function() { 
+$('.wordpressMeetTheTeamPageButton').click( function() { 
   $( "#wordpressHomePage" ).hide(); 
   $( "#wordpressContactPage" ).hide();
   $( "#wordpressProductPage" ).hide();
