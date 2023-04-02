@@ -1,109 +1,587 @@
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Seth McGathey Portfolio</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=ABeeZee">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+
+    <link rel="shortcut icon" href="images/favicon.png">
+    
+    <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
   </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
 
-<div class="navBar">
-    <div class="navbarContentContainer">
-        <div id="menuFullContainer">
-          <div id="menuIcon">
-            <p><b>MENU</b></p>
-          </div>
-          <ul class="navigationButtons" id="mobileButtons">
-            <a class="naviagtionStyle" href="index.html">Home</a><br>
-            <a class="naviagtionStyle" href="codeFiddle.html">Code Fiddle</a><br>
-            <a class="naviagtionStyle" href="wordpressPage.html">Wordpress Site</a><br> 
-            <a class="naviagtionStyle" href="browserGame.html">Browser Game</a><br> 
-            <a class="naviagtionStyle" href="resume.html">Resume</a><br>
-          </ul>
-        </div>
-          <img  src='img/sethProfilePic.jpg' title='Profile Picture of Seth' alt='Seth McGathey at DevCodeCamp.' class='navPicDesktop' id="navBarProfpic"/>
-        <h1 class="NameHeader">Seth McGathey</h1>
-          <img  src='img/sethProfilePic.jpg' title='Profile Picture of Seth' alt='Seth McGathey at DevCodeCamp.' class='navPicMobile' id="navBarProfpic"/>
-          <h4 class="navbarText">As a highly experienced Automation Engineer and team leader, I seek new opportunities to leverage my skills and expertise to drive innovation and growth. With a proven track record of successfully leading and mentoring large teams to deliver high-quality products, I am ready to take on new challenges and help a new company achieve their quality goals.</h4> 
-        </div>
-    <div id="navbarButtonsContainerId" class="navbarButtonsContainer">
-      <ul class="navigationButtons" id="fullScreenButtons">
-        <a class="naviagtionStyle" href="index.html">Home</a> |  
-        <a class="naviagtionStyle" href="browserGame.html">Browser Game</a> |
-        <a class="naviagtionStyle" href="wordpressPage.html">Wordpress Site</a> |
-        <a class="naviagtionStyle" href="codeFiddle.html">Code Fiddle</a> |
-        <a class="naviagtionStyle" href="resume.html">Resume</a>
+  <!-- <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
-</div>
+  </div> -->
 
-<body>
-<div class="containerWithFooter">
-  <div class="container">
-        <div class="pageContent">
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-center">
+          
+          <div class="">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                <li><a href="#about-section" class="nav-link">About</a></li>
+                <li><a href="#services-section" class="nav-link">QA Experience</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class=" text-center mx-5">
+            <h1 class="m-0 site-logo"><a href="index.html">Seth</a></h1>
+          </div>
+
+          <div class="text-left">
+
+            <nav class="site-navigation position-relative" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#portfolio-section" class="nav-link">Living Life</a></li>
+                <li><a href="#blog-section" class="nav-link">Technical Skills</a></li>
+                <li><a href="#resume-section" class="nav-link">Resume</a></li>
+              </ul>
+            </nav>
+
+
+            <div class="d-inline-block d-lg-none" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+
+
+    <div class="site-blocks-cover overlay bg-light" id="home-section">
+
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-md-12 mt-lg-5 text-left align-self-center text-intro">
             <div class="row">
-              <div class="profBoxes" id="browserGameProfile">
-                <a class="profileBoxLinks" href="browserGame.html">
-                  <h4 class="profileHeaders">Browser Game</h4>
-                  <p>Along with Becky Gahart and Matt Cordier, Seth created a browser version of the board game Tsuro. The three of them created it with Node.js and Sockets.IO. This was the first time any of three had worked with Node.js or Sockets.IO, but they feel it was a successful project that they all enjoyed. While learning Node.js and Sockets.IO was a benefit, Seth feels the greatest benefit was the intricate team work needed to make this program a success. Each member had to regularly update the other members to avoid using different naming conventions or doing work twice. It was a project where each thing done directly related to the other members of the team.</p>
-                </a>
-              </div><!--profBoxes-->
+              <div class="col-lg-6">
+                <h1 class="text-black">I'm Seth McGathey</h1>
+                <p class="lead">As an experienced Automation Engineer and team leader, I seek new opportunities to leverage my skills and expertise to drive innovation and growth. With a proven track record of successfully leading and mentoring large teams to deliver high-quality products, I am ready to take on new challenges and help you achieve your quality goals.</a></p>
+                <p><a href="#portfolio-section" class="btn smoothscroll btn-primary">Portfolio</a></p>
+
+              </div>
             </div>
-          <div class="row">
-            <div class="profBoxes" id="WordpressProfile">
-              <a class="profileBoxLinks" href="wordpressPage.html">
-              <h4 class="profileHeaders">Wordpress Site</h4>
-                  <p>Along with Becky Gahart, Scott Parker, and Matt Cordier, Seth created a Wordpress site for a fake company. They developed the site as if they were a company of web developers looking for new clients. Seth focused on the javascript functionality of the contact page and the overall backend using PHP.</p>
-                </a>
-            </div><!--profBoxes-->
-            <div class="profBoxes" id="codeFiddle">
-              <a class="profileBoxLinks" href="codeFiddle.html">
-                <h4 class="profileHeaders">Code Fiddle</h4>
-                <p>This project is an in browser coding playground. It allows programmers to write HTML, Javascript, and CSS into the browser and see the results immediately without leaving the page. Seth created this project on his own using those same three languages as well as PHP and used a database to store user data.</p>
-              </a>
-            </div><!--profBoxes-->
           </div>
-          <div class="row">
-            <div class="profBoxes" id="ResumeProfile">
-              <a class="profileBoxLinks" href="resume.html">
-                <h4 class="profileHeaders">Resume</h4>
-                <p>For a quick and easy overview of Seth's knowledge, work experience, and programming experience, you can see his full and up-to-date resume by clicking here. If you would like to download or print Seth's resume there are links for the PDF and Word Document formats in the footer below and on each page of this portfolio. If you would like to contact Seth about a position or a project, his contact information is on his resume and is also in the footer.</p>
-              </a>
-            </div><!--profBoxes-->
+            
+        </div>
+      </div>
+
+      <img src="images/SethsTransparentProfile.png" alt="Seths Profile Picture" class="img-face" data-aos="fade">
+
+      
+    </div>  
+
+    
+
+    <div class="site-section" id="about-section">
+      <div class="container">
+        <div class="row ">
+          <div class="col-12 mb-4 position-relative">
+            <h2 class="section-title">About</h2>
           </div>
-        </div><!--pageContent-->
-
-
-  </div>
-  <footer class="footerColor">
-    <div class="footerBorder">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-sm-push-4 col-xs-12" id="linkedInContainer">
-          <p class="footertext" id="name">Seth McGathey</p>
-          <p class="siteMap"><a href="siteIndex.html">Site Map</a></p>
-          <a id="linkedInButton" href="https://www.linkedin.com/pub/seth-mcgathey/2a/b12/498">
-            <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" title="Link to Seth McGathey's profile on LinkedIn." alt="Link to Seth McGathey's profile on LinkedIn.">
-          </a>
+          <div class="col-lg-4 order-1 order-lg-3 mb-4 mb-lg-0">
+            <div>
+            <img src="images/SethProfilePic.png" alt="Seth Profile Picture" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-4 order-2 order-lg-1">
+            <p>I am a professional automation engineer with a Bachelor's degree in Computer Science. I have been working in this field for several years and have developed a strong skill set that allows me to excel in my work. I have a passion for leading teams of automation engineers and driving projects to success.</p>
+            <p>My goal as an automation engineer is to leverage my technical expertise and leadership skills to ensure that the teams I lead deliver high-quality work while continuously improving processes and workflows. I believe that my ability to balance a strong work ethic with a positive attitude and an enthusiastic approach to life helps me to be successful both personally and professionally.</p>
+          </div>
+          <div class="col-lg-4 order-3 order-lg-2">
+            <p>When I'm not working, I enjoy playing and creating board games, playing soccer, volleyball, and bar trivia. I recently have taken an interest in exploring new challenges in fitness through crossfit. My personal interests help me to stay creative, maintain a positive attitude, and approach challenges with a problem-solving mindset.</p>
+            <p>Thank you for taking the time to learn a bit about me. I look forward to connecting and working with others who share my passion for technology, leadership, and a well-balanced life.</p>
+          </div>
+          
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-sm-pull-4 col-xs-12" id="contactContainer">
-          <p>Contact Info</p>
-          <a class="footertext" id="number" href="tel:708-297-0996">708-297-0996</a>
-          <a class="footertext" id="email" href="mailto:seth.mcgathey@gmail.com?Subject=In%20regards%20to%20your%20portfolio." target="_top">seth.mcgathey@gmail.com</a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="resumeContainer">
-          <p>Resume</p>
-          <a class="footertext" id="resumePdf" target="_blank" href="img/resume/SethMcGathey.pdf">PDF Format</a>
-          <a class="footertext" id="resumeWord" target="_blank" href="img/resume/SethMcGathey.docx">Word Document Format</a>
-        </div> 
+      </div>
     </div>
-  </footer>
-  </div>
-
-<script type="text/javascript" src="js/jquery-1.12.0.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/javascript.js"></script>
 
 
+    <div class="site-section" id="services-section">
+      <div class="container">
+        <div class="row ">
+          <div class="col-12 mb-5 position-relative">
+            <h2 class="section-title text-center mb-5">QA Experience</h2>
+          </div>
+          
+          <div class="col-md-6 mb-4">
+            <div class="service d-flex h-100">
+              <div class="service-number mr-4"><span>01</span></div>
+              <div class="service-about">
+                <h3>QA Automation Lead</h3>
+                <p>As a QA Automation Lead, I have extensive experience leading a diverse team of remote workers from different time zones and regions. I take pride in my ability to motivate and guide team members to reach their full potential, as evidenced by the fact that I have successfully turned several low-performing automation engineers into top performers.</p>
+
+                <p>One of my most notable achievements has been personally overseeing the full conversion of three years' worth of Protractor tests to Cypress tests in under a year. This involved managing the entire conversion process from start to finish, including setting up the necessary infrastructure and providing ongoing training and support to team members. The success of this project speaks to my ability to manage complex initiatives and drive them to completion.</p>
+                  
+                <p>Overall, my experience as a QA Automation Lead has taught me the importance of effective leadership, communication, and a results-driven approach to problem-solving. I am confident that my skills and experience will allow me to make a valuable contribution to any organization in need of a talented and dedicated automation lead.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="service d-flex h-100">
+              <div class="service-number mr-4"><span>02</span></div>
+              <div class="service-about">
+                <h3>Quality Assurance Developer</h3>
+                <p>As a Quality Assurance Developer, I had the privilege of being trained by two highly knowledgeable mentors, which laid a solid foundation for my skills in this field. I went on to train several new Quality Assurance Developers who joined the team after me, passing on the expertise I had gained.</p>
+
+                <p>One of my biggest achievements in this role was successfully training several manual team members to automate their own test cases, demonstrating my ability to effectively communicate technical concepts and share knowledge with others.</p>
+                  
+                <p>Additionally, I led a stabilization initiative that resulted in a 40% reduction in flaky test cases, which helped to improve the overall efficiency and effectiveness of our QA processes.</p>
+                  
+                <p>Overall, my experience as a Quality Assurance Developer has given me a deep understanding of the importance of collaboration, knowledge sharing, and effective communication in delivering high-quality software products.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="site-section block__62272" id="portfolio-section">
+      
+
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 position-relative">
+            <h2 class="section-title text-center mb-5">Living Life</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-5" data-aos="fade">
+          <div id="filters" class="filters text-center button-group col-md-7">
+            <button class="btn btn-primary active" data-filter="*">All</button>
+            <button class="btn btn-primary" data-filter=".family">Family</button>
+            <button class="btn btn-primary" data-filter=".sports">Sports/Fitness</button>
+            <button class="btn btn-primary" data-filter=".trivia">Games/Trivia</button>
+            <button class="btn btn-primary" data-filter=".travel">Travel</button>
+          </div>
+        </div>  
+        
+        <div id="posts" class="row no-gutter">
+          <div class="item family col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/WeddingPhoto.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/WeddingPhoto.jpg">
+            </a>
+            <p class="text-center">My wife Garett and I</p>
+          </div>
+
+          <div class="item sports col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/VolleyballChamps2022.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/VolleyballChamps2022.jpg">
+            </a>
+            <p class="text-center">2022 Volleyball Champs</p>
+          </div>
+
+          <div class="item trivia col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/DisneyTriviaChamps.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/DisneyTriviaChamps.jpg">
+            </a>
+            <p class="text-center">Disney trivia champs</p>
+          </div>
+
+          <div class="item travel col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/Colosseum.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/Colosseum.jpg">
+            </a>
+            <p class="text-center">Visiting the Colosseum</p>
+          </div>
+
+          <div class="item family col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/FamilyNewYears.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/FamilyNewYears.jpg">
+            </a>
+            <p class="text-center">My family celebrating New Years</p>
+          </div>
+
+          <div class="item sports col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/SpartanRace.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/SpartanRace.jpg">
+            </a>
+            <p class="text-center">Spartan Race with family</p>
+          </div>
+
+
+
+
+
+
+          <div class="item travel col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/CostaRicaStaircase.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/CostaRicaStaircase.jpg">
+            </a>
+            <p class="text-center">Building a staircase for a Costa Rican school</p>
+          </div>
+
+          <div class="item family col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/FamilyPicture.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/FamilyPicture.jpg">
+            </a>
+            <p class="text-center">Out on the town with family</p>
+          </div>
+
+          <div class="item sports col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/GarettAndIHiking.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/GarettAndIHiking.jpg">
+            </a>
+            <p class="text-center">Hiking in northern Wisconsin</p>
+          </div>
+
+          <div class="item trivia col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/Prototype.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/Prototype.jpg">
+            </a>
+            <p class="text-center">Playtesting one of my prototypes</p>
+          </div>
+
+          <div class="item family col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/CousinsGameNight.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/CousinsGameNight.jpg">
+            </a>
+            <p class="text-center">Cousins game night</p>
+          </div>
+
+          <div class="item family col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/BrothersKingOfTheRaft.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/BrothersKingOfTheRaft.jpg">
+            </a>
+            <p class="text-center">King of the raft with my brothers</p>
+          </div>
+
+          <div class="item trivia col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/TriviaWinners.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/TriviaWinners.jpg">
+            </a>
+            <p class="text-center">Trivia winners</p>
+          </div>
+
+          <div class="item travel col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/CostaRicanView.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/CostaRicanView.jpg">
+            </a>
+            <p class="text-center">View over Costa Rica</p>
+          </div>
+
+          <div class="item sports col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/CollegeSoccer.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/CollegeSoccer.jpg">
+            </a>
+            <p class="text-center">College soccer team</p>
+          </div>
+
+          <div class="item trivia col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/Boardgames.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/Boardgames.jpg">
+            </a>
+            <p class="text-center">My always expanding game collection</p>
+          </div>
+
+          <div class="item travel col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/GelatoInItaly.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/GelatoInItaly.jpg">
+            </a>
+            <p class="text-center">Gelato In Italy</p>
+          </div>
+
+          <div class="item travel col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/ViewOverItaly.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/ViewOverItaly.jpg">
+            </a>
+            <p class="text-center">Looking out over Italy</p>
+          </div>
+
+          <div class="item trivia col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/TriviaTeamNameWinners.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/TriviaTeamNameWinners.jpg">
+            </a>
+            <p class="text-center">When you can't win trivia, win team name</p>
+          </div>
+
+          <div class="item travel col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/PragueCollegeTrip.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/PragueCollegeTrip.jpg">
+            </a>
+            <p class="text-center">Prague College Trip</p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!--<section class="site-section bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-5 position-relative">
+            <h2 class="section-title text-center mb-5 text-white">What Client Are Sayings</h2>
+          </div>
+        </div>
+        <div class="owl-carousel slide-one-item">
+          <div class="slide">
+            <blockquote>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              <p><cite>&mdash; Jean Smith</cite></p>
+            </blockquote>
+          </div>
+          <div class="slide">
+            <blockquote>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+              <p><cite>&mdash; Carl Spencer</cite></p>
+            </blockquote>
+          </div>
+          <div class="slide">
+            <blockquote>
+              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+              <p><cite>&mdash; Ryan Peters</cite></p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-5 position-relative">
+            <h2 class="section-title text-center">Technical Skills</h2>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
+            <img src="images/logo_1.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
+            <img src="images/logo_2.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
+            <img src="images/logo_3.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
+            <img src="images/logo_4.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+          </div>      
+
+          
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
+            <img src="images/logo_5.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+          </div> 
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
+            <img src="images/logo_6.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+          </div> 
+        </div>
+      </div>
+    </section>!-->
+
+    <section class="site-section bg-light" id="blog-section">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-12 mb-5 position-relative">
+            <h2 class="section-title text-center mb-5">Technical Skills</h2>
+          </div>
+
+          <div class="col-md-6 mb-5 mb-lg-0 col-lg-4">
+            <div class="blog_entry">
+              <a href="#"><img src="images/cypresslogo2.png" alt="Cypress logo" class="img-fluid"></a>
+              <div class="p-4 bg-white">
+                <h3><a href="#">Cypress</a></h3>
+                <span class="date">2+ Years Experience</span>
+                <p>Our team had been using Protractor for three years before I discovered that it was being deprecated. Being proactive, I researched suitable replacement options and settled on Cypress as the best alternative. I took two weeks to setup Cypress and learn how to convert our tests to the new framework before training my team members how to do the same. Together, we were able to convert our full suite of tests in under a year while staying on top of our other responsibilities.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-5 mb-lg-0 col-lg-4">
+            <div class="blog_entry">
+              <a href="#"><img src="images/jenkinslogo.png" alt="Jenkins logo" class="img-fluid"></a>
+              <div class="p-4 bg-white">
+                <h3><a href="#">Jenkins</a></h3>
+                <span class="date">4+ Years Experience</span>
+                <p>During my time at Milwaukee Tool, I gained experience working with Jenkins, starting out using prebuilt jobs created by others. As my familiarity with Jenkins grew, I began to make modification and create new jobs to meet the team's needs. When I first joined the automation team, we relied on manual processes to run build verifications, smoke tests, and regressions. Over time, I leveraged my expertise to automate these processes and set up builds to execute these tests automatically once a fresh release candidate had been cut. My experience with Jenkins has enabled me to streamline processes and optimize efficiency for my team.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-5 mb-lg-0 col-lg-4">
+            <div class="blog_entry">
+              <a href="#"><img src="images/typescriptLogo2.png" alt="Typscript logo" class="img-fluid"></a>
+              <div class="p-4 bg-white">
+                <h3><a href="#">Typescript</a></h3>
+                <span class="date">4+ Years Experience</span>
+                <p>Drawing on my prior experience with JavaScript, Java, and C#, I found TypeScript to be an easy language to learn. I first started using it extensively while at Milwaukee Tool. There, I utilized it to set up the Protractor framework and develop numerous automation scripts. When transitioning from Protractor to Cypress, I continued to use TypeScript, which allowed me to leverage my existing knowledge and make the transition seamless. Each new language I learn is an enjoyable experience, providing an opportunity to test and refine my programming skills while keeping my syntax skills sharp.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!--<section class="site-section" id="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-5 position-relative">
+            <h2 class="section-title text-center mb-5">Contact Form</h2>
+          </div>
+        </div>
+        <form action="#" class="form">
+          <div class="row mb-4">
+            <div class="form-group col-6">
+              <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="form-group col-6">
+              <input type="text" class="form-control" placeholder="Last name">
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="form-group col-12">
+              <input type="email" class="form-control" placeholder="Email address">
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="form-group col-12">
+              <input type="text" class="form-control" placeholder="Subject of the message">
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="form-group col-12">
+              <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Type your message here.."></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <input type="submit" class="btn btn-primary" value="Send Message">
+            </div>
+          </div>
+          
+        </form>
+      </div>
+    </section>!-->
+
+    <footer class="site-section bg-light footer" id="resume-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4  text-center">
+            <h3 class="footer-title">Seth McGathey</h3>
+            <p><span class="d-inline-block d-md-block">7017 W Holmes Ave</span> Greenfield, WI, USA</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <h3 class="footer-title">Resume</h3>
+            <ul class="list-unstyled">
+              <li><a href="resume/SethMcGathey.pdf">PDF Resume</a></li>
+              <li><a href="resume/SethMcGathey.jpg">JPEG Resume</a></li>
+              <li><a href="resume/SethMcGathey.docx">DOCX Resume</a></li>
+            </ul>
+          </div>
+          <!--<div class="col-md-3">
+            <h3 class="footer-title">LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/seth-mcgathey-498b122a/" class="social-circle"><span class="icon-linkedin"></span></a>
+          </div>!-->
+          <div class="col-md-4  text-center">
+            <h3 class="footer-title">Contact</h3>
+            <ul class="list-unstyled">
+              <li>708-297-0996</li>
+              <li>seth.mcgathey@gmail.com</li>
+              <a href="https://www.linkedin.com/in/seth-mcgathey-498b122a/" class="social-circle"><span class="icon-linkedin"></span></a>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center">
+              <p><a href="#home-section" class="smoothscroll"><span class="icon-arrow_upward mr-2"></span>Go to top</a></p>
+            </div>
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+
+  
+  <script src="js/main.js"></script>
+
+  
   </body>
 </html>
